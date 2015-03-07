@@ -1,0 +1,124 @@
+         1 1010.520000 1046.160000            0            0            0           567380          ?  10.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           282750          ?  10.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0           629520          ?  11.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           342030          ?  11.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0           696300          ?  12.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           406830          ?  12.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0           768720          ?  13.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           477440          ?  13.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0           846090          ?  14.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           553970          ?  14.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0           928680          ?  15.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           635510          ?  15.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.0173e+06          ?  16.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           722900          ?  16.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.1119e+06          ?  17.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           815980          ?  17.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.2118e+06          ?  18.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0           914970          ?  18.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.3166e+06          ?  19.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.0196e+06          ?  19.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.4274e+06          ?  20.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.1299e+06          ?  20.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.5442e+06          ?  21.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.2455e+06          ?  21.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.6663e+06          ?  22.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.3666e+06          ?  22.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.7936e+06          ?  23.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.4937e+06          ?  23.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       1.9266e+06          ?  24.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.6261e+06          ?  24.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       2.0654e+06          ?  25.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.7644e+06          ?  25.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       2.2103e+06          ?  26.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       1.9084e+06          ?  26.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       2.3604e+06          ?  27.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       2.0581e+06          ?  27.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       2.5168e+06          ?  28.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       2.2131e+06          ?  28.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       2.6783e+06          ?  29.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       2.3739e+06          ?  29.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       2.8455e+06          ?  30.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       2.5409e+06          ?  30.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       3.0178e+06          ?  31.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       2.7133e+06          ?  31.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       3.1956e+06          ?  32.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       2.8911e+06          ?  32.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       3.3797e+06          ?  33.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       3.0747e+06          ?  33.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/coj1m003-kb71-20141201-0077-e90.fits
+         1 1010.520000 1046.160000            0            0            0       3.5699e+06          ?  34.000000   0.000000   0.000000   regions     circle
+#
+         2 1147.790000 1054.730000            0            0            0       3.2637e+06          ?  34.000000   0.000000   0.000000   regions     circle
+#

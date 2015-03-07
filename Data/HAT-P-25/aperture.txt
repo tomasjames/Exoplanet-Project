@@ -1,0 +1,105 @@
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           258010          ?   7.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0           6904.2          ?   7.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           264360          ?   8.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0           8984.3          ?   8.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           269690          ?   9.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            11261          ?   9.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           274360          ?  10.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            13790          ?  10.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           278750          ?  11.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            16740          ?  11.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           283130          ?  12.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            19924          ?  12.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           287460          ?  13.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            23410          ?  13.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           291850          ?  14.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            27091          ?  14.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           296510          ?  15.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            31068          ?  15.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           301340          ?  16.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            35346          ?  16.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           306450          ?  17.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            39945          ?  17.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           311550          ?  18.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            44755          ?  18.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           317000          ?  19.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            49878          ?  19.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           322650          ?  20.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            55376          ?  20.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           328410          ?  21.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            61005          ?  21.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           334610          ?  22.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            67033          ?  22.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           341170          ?  23.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            73158          ?  23.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           347920          ?  24.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            79554          ?  24.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           355000          ?  25.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            86225          ?  25.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           362180          ?  26.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0            93218          ?  26.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Raw/c_e_20101111_hatp25-001_im180w.fits
+         1 669.850000 533.850000            0            0            0           369570          ?  27.000000   0.000000   0.000000   regions     circle
+#
+         2 566.230000 615.090000            0            0            0           100470          ?  27.000000   0.000000   0.000000   regions     circle
+#

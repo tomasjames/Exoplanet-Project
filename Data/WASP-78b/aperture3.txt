@@ -1,0 +1,104 @@
+         3 1009.350000 1055.660000            0            0            0           792230          ?  10.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0            41919          ?  10.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           807390          ?  11.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0            50392          ?  11.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           821700          ?  12.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0            59719          ?  12.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           835580          ?  13.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0            69980          ?  13.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           849390          ?  14.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0            81255          ?  14.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           863370          ?  15.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0            93535          ?  15.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           877720          ?  16.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           106360          ?  16.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           892680          ?  17.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           119950          ?  17.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           908470          ?  18.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           134490          ?  18.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           924650          ?  19.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           149720          ?  19.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           941590          ?  20.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           165920          ?  20.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           959450          ?  21.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           183000          ?  21.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           977870          ?  22.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           200910          ?  22.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0           997060          ?  23.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           219620          ?  23.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0        1.017e+06          ?  24.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           239050          ?  24.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0        1.038e+06          ?  25.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           259460          ?  25.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0       1.0597e+06          ?  26.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           280360          ?  26.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0       1.0824e+06          ?  27.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           302200          ?  27.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0       1.1054e+06          ?  28.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           324690          ?  28.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0       1.1292e+06          ?  29.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           348480          ?  29.000000   0.000000   0.000000   regions     circle
+#
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Raw/lsc1m005-kb78-20141129-0200-e90.fits
+         3 1009.350000 1055.660000            0            0            0       1.1546e+06          ?  30.000000   0.000000   0.000000   regions     circle
+#
+         4 1066.060000 951.110000            0            0            0           372790          ?  30.000000   0.000000   0.000000   regions     circle
+#

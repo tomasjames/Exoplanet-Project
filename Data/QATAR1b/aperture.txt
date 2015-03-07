@@ -1,0 +1,95 @@
+         1 424.970000 520.390000      37.0635      0.00288       52.341           149490         OK   5.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 407.727273 531.090909     circle   5.000000   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      37.0229      0.00284       51.341           155180         OK   5.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 407.272727 533.181818     circle   5.454545   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9924      0.00281       50.964           159600         OK   6.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 405.000000 534.727273     circle   5.909091   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9691      0.00279       50.087           163060         OK   6.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 404.818182 534.090909     circle   6.545455   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9524      0.00279       50.553           165590         OK   7.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 405.000000 533.272727     circle   6.909091   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000       36.938      0.00278       49.522           167810         OK   7.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 404.545455 533.727273     circle   7.636364   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9284      0.00279       50.571           169290         OK   8.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 405.454545 533.181818     circle   7.911180   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9186      0.00279       49.589           170830         OK   8.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 403.363636 534.000000     circle   8.364130   0.000000  90.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9106       0.0028       48.905           172090         OK   9.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 402.363636 534.500000     circle   8.864200   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9063      0.00282       49.919           172770         OK   9.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 403.363636 535.000000     circle   9.364170   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.9006      0.00282       49.496           173690         OK  10.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 402.463636 534.100000     circle   9.964138   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8946      0.00284       48.634           174640         OK  10.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 399.019192 536.100000     circle  10.354678   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8914      0.00285       48.839           175160         OK  11.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 398.685859 536.433333     circle  10.908086   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8861      0.00286       47.941           176030         OK  11.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 395.435859 537.683333     circle  11.436007   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8827      0.00288       47.722           176580         OK  12.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 394.060859 538.058333     circle  11.936001   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8812       0.0029       47.984           176820         OK  12.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 394.810859 536.183333     circle  12.687183   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8796      0.00292       48.078           177080         OK  13.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 395.060859 536.433333     circle  13.310986   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8714      0.00297       47.378           178420         OK  14.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 384.775144 539.147619     circle  14.775882   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8714      0.00297       47.378           178420         OK  14.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 384.775144 539.147619     circle  14.775882   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8686      0.00304       47.448           178880         OK  15.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 370.918001 537.004762     circle  15.347283   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8675      0.00307       47.501           179060         OK  16.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 370.346573 536.861905     circle  15.775749   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8675      0.00307       47.501           179060         OK  16.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 370.346573 536.861905     circle  15.775749   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8667      0.00309       47.552           179200         OK  16.500000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 370.346573 536.861905     circle  16.204388   0.000000   0.000000
+# /Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Sample/QATAR1b/Raw/c_e_20110821_qatar1b-001_i.fits
+         1 424.970000 520.390000      36.8655      0.00311       47.525           179400         OK  17.000000   0.000000   0.000000   regions     circle
+#
+#SKY1          1 367.632287 537.719048     circle  17.060859   0.000000   0.000000
