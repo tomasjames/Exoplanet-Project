@@ -34,13 +34,13 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
 
     # Define constants
     G = 6.673e-11 # Universal gravitational constant
-    m_ref = -1.5 # Apparent magnitude of Sirius
-    I_ref = (40*3.846e26)/(4*np.pi*(9.46e15)**2) # Intensity of Sirius. Units: W/m**2
+    #m_ref = -1.5 # Apparent magnitude of Sirius
+    #I_ref = (40*3.846e26)/(4*np.pi*(9.46e15)**2) # Intensity of Sirius. Units: W/m**2
     # N.B. Above is from I = L/4piR**2 where R = distance from Earth
 
     # Determine intensity of star (from apparent magnitude equation)
     #I_0 = I_ref*10**((2.5)*(m_ref-app_mag))
-    I_ref = 0
+    I_0 = 1
 
 
     ##########################################################################
@@ -75,7 +75,7 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
     # Generates arbitrary coordinates in pixels and finds those that fit
     # within radius**2 (i.e. pythagorean). This is then used to calculate
     # these values as a fraction of the exoplanet radius.
-    for x, y in product(range(-radius, radius + 1), repeat=2):
+    for x, y in product(range(-radius, radius), repeat=2):
         if x ** 2 + y ** 2 <= radius**2:
             x_coord.append(x*(Rplanet/radius))
             y_coord.append(y*(Rplanet/radius))
@@ -110,14 +110,14 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
 
             # Determine distance between centre of planetary disk and stellar disk
             # The numpy.sqrt allows sqrt of an array
-            D[i] = np.sqrt((X_pos[i] + x_coord[j])**2)
+            D[i] = np.sqrt(((X_pos[i] + x_coord[j])**2) + y_coord[j]**2)
 
             # Loop over intervals of d to calculate flux blocked. If the distance
             # to the exoplanet lies within the radius of the star, the flux blocked
             # is calculated using equation 7 of A, D and S paper. 
             # If it lies outside of the radius of the star, the flux blocked is assigned
             # a 0 value. 
-            if np.abs(D[i]) < Rstar:
+            if D[i] <= Rstar:
                 F_A[i] += I_0*(1-mu*(1-np.sqrt(1-(D[i]/Rstar)**2)))
             else:
                 F_A[i] = 0
@@ -128,9 +128,10 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
     ##########################################################################
        
     # Use simplified form of equation 7 to determine off-transit flux
-    F = np.ones(len(X_pos))*(I_0*(1-mu))
+    #F = np.ones(len(X_pos))*(I_0*(1-mu))
+    F = np.ones(len(X_pos))
 
     # Subtract flux blocked from F to determine total flux per unit pixel solid angle 
     tot_F = F - F_A
 
-    return tot_F, X_pos, F
+    return tot_F, X_pos, D

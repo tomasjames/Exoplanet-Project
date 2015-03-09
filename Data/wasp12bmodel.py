@@ -19,17 +19,16 @@ Rplanet = 1.736*(7e7) # m
 radius = 4 # 4 pixel radii planet
 obs_end = 36537 # s
 trans_mid = 26257 # s
-nobs = 240
+nobs = 240 # Number of observations
 dur = 36537-22157 # Frame 222 - Frame 40
 a = 0.02293*149.5e9 # m
 i = 86.0 # deg
-mu = 0.684
+mu = 0.665
 app_mag = 11.69
-timestep = 10000
 
 # Call model
 #x, y = model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i, mu, app_mag)
-F, X, f = model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i, mu, app_mag)
+F, X, D = model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i, mu, app_mag)
 #F, D = model(Rstar, a, mu, timestep, app_mag)
 
 # Plot data
@@ -39,4 +38,4 @@ xlabel('Distance from Transit Centre Point (m)')
 ylabel('Incident Flux per Pixel Solid Angle (W/m**2/sr)')
 legend(loc='best')
 show()
-
+savefig('model_curve.png')
