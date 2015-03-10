@@ -8,7 +8,6 @@ Script: Prototype for modelling exoplanetary lightcurves
 '''
 
 import numpy as np
-from numpy import asarray
 from matplotlib.pyplot import *
 from itertools import product
 
@@ -46,11 +45,11 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
 
     # T is the time between observation start and the transit midpoint
     time = (obs_end - trans_mid)
-    T = np.linspace(-time, +time, (nobs+1))
+    T = np.linspace(-time, +time, nobs)
 
     #########################################################################
     ################# Compute orbital velocities and angles #################
-    ##########################################################################
+    #########################################################################
 
     # Computes orbital velocity using two masses and the semi major-axis
     vorb = np.sqrt(G*(Mstar + Mplanet)/a)
@@ -73,14 +72,14 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
     # Generates arbitrary coordinates in pixels and finds those that fit
     # within radius**2 (i.e. pythagorean). This is then used to calculate
     # these values as a fraction of the exoplanet radius.
-    for x, y in product(range(-radius, radius+1), repeat=2):
+    for x, y in product(np.linspace(-radius, radius, (nobs+1)), repeat=2):
         if x ** 2 + y ** 2 <= radius**2:
-            x_coord.append(x*(Rplanet/radius))
-            y_coord.append(y*(Rplanet/radius))
+            x_coord.append((x/radius)*Rplanet)
+            y_coord.append((y/radius)*Rplanet)
 
     # Converts above lists to arrays for compatibility purposes
-    x_coord = asarray(x_coord)
-    y_coord = asarray(y_coord)
+    x_coord = np.asarray(x_coord)
+    y_coord = np.asarray(y_coord)
 
 
     ##########################################################################
@@ -91,6 +90,9 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
     X_pos = np.zeros(len(T))
     #Y_pos = np.zeros(len(phase))
 
+    # Determine values of x position
+    X_pos = vorb*T
+
     # Declare array to house flux values
     F_A = np.zeros(len(X_pos))
 
@@ -98,14 +100,18 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
     #Y_pos = a*(np.arcsin(2*pi - radians(i)))    
 
     # Declare array to house distances from centre of star
-    D = np.zeros(len(T))
+    D = np.zeros(len(X_pos))
+
+    ##########################################################################
+    ############## Determine flux blocked per pixel solid angle ##############
+    ##########################################################################
 
     # Determine position (postion from transit midpoint across stellar disk)
     for i in range(0, len(X_pos)):
         for j in range(0, len(x_coord)):
             
             #X_pos[i] = a*np.sin((phase[i]))
-            X_pos[i] = vorb*T[i]
+            #X_pos[i] = vorb*T[i]
 
             # Determine distance between centre of planetary disk and stellar disk
             # The numpy.sqrt allows sqrt of an array
@@ -116,14 +122,12 @@ def model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i
             # is calculated using equation 7 of A, D and S paper. 
             # If it lies outside of the radius of the star, the flux blocked is assigned
             # a 0 value. 
-            if D[i] <= Rstar:
+            if D[i] < Rstar:
                 F_A[i] += I_0*(1-mu*(1-np.sqrt(1-(D[i]/Rstar)**2)))
-            else:
-                F_A[i] = 0
     
 
     ##########################################################################
-    ############## Determine flux blocked per pixel solid angle ##############
+    ##############  ##############
     ##########################################################################
        
     # Use simplified form of equation 7 to determine off-transit flux

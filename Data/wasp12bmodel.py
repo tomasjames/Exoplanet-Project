@@ -13,7 +13,7 @@ from modelv2 import *
 from matplotlib.pyplot import *
 
 Mstar = 1.35*1.99e30 # kg
-Rstar = 1.599*695.8e6 # m
+Rstar = 1.599*6.96e8 # m
 Mplanet = 1.404*1.9e27 # kg
 Rplanet = 1.736*(7e7) # m
 radius = 4 # 4 pixel radii planet
@@ -39,3 +39,4 @@ ylabel('Incident Flux per Pixel Solid Angle (W/m**2/sr)')
 legend(loc='best')
 savefig('Documents/University/Cardiff/Project/Project/Data/model_curve.png', dpi=200)
 show()
+

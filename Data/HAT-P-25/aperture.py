@@ -11,7 +11,7 @@ from numpy import *
 from matplotlib.pyplot import *
 
 # Read in data
-aperture = genfromtxt('aperture.txt', dtype = 'float')
+aperture = genfromtxt('Documents/University/Cardiff/Project/Project/Data/HAT-P-25/aperture.txt', dtype = 'float')
 
 # Declare empty arrays to store specific values
 radius = zeros(len(aperture)/2)
