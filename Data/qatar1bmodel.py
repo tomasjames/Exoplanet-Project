@@ -12,20 +12,18 @@ from modelv2 import *
 
 from matplotlib.pyplot import *
 
-Mstar = 1.35*1.9891e30 # kg
-Rstar = 1.599*6.955e8 # m
-Mplanet = 1.404*1.9e27 # kg
-Rplanet = 1*(6.9e7) # m
+Mstar = 0.85*1.9891e30 # kg
+Rstar = 0.823*6.955e8 # m
+Mplanet = 1.09*1.9e27 # kg
+Rplanet = 1.164*(6.9e7) # m
 radius = 4 # 4 pixel radii planet
-end = 36537 # s
-mid = 26257 # s
-start = 16257 # s
-nobs = 240 # Number of observations
-dur = 36537-22157 # Frame 222 - Frame 40
-a = 0.02293*149.6e9 # m
+end = 29108 # s
+mid = 22724 # s
+start = 16340 # s
+nobs = 181 # Number of observations
+a = 0.02343*149.6e9 # m
 i = 86.0 # deg
 mu = 1
-app_mag = 11.69
 
 # Call model
 #x, y = model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i, mu, app_mag)
@@ -34,10 +32,10 @@ F, X, F_A = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius,
 
 # Plot data
 figure(1)
-plot(X, F, label = 'Model for WASP-12b')
+plot(X, F, label = 'Model for QATAR-1b')
 xlabel('Distance from Transit Centre Point (m)')
 ylabel('Incident Flux per Pixel Solid Angle (W/m**2/sr)')
 legend(loc='best')
-savefig('Documents/University/Cardiff/Project/Project/Data/model_curve_wasp12b.png', dpi=200)
+savefig('Documents/University/Cardiff/Project/Project/Data/model_curve_qatar1b.png', dpi=200)
 show()
 

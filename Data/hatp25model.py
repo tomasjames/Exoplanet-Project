@@ -12,17 +12,17 @@ from modelv2 import *
 
 from matplotlib.pyplot import *
 
-Mstar = 1.35*1.9891e30 # kg
-Rstar = 1.599*6.955e8 # m
-Mplanet = 1.404*1.9e27 # kg
-Rplanet = 1*(6.9e7) # m
+Mstar = 1.01*1.9891e30 # kg
+Rstar = 0.959*6.955e8 # m
+Mplanet = 0.567*1.9e27 # kg
+Rplanet = 1.19*(6.9e7) # m
 radius = 4 # 4 pixel radii planet
 end = 36537 # s
 mid = 26257 # s
 start = 16257 # s
 nobs = 240 # Number of observations
 dur = 36537-22157 # Frame 222 - Frame 40
-a = 0.02293*149.6e9 # m
+a = 0.0466*149.6e9 # m
 i = 86.0 # deg
 mu = 1
 app_mag = 11.69
@@ -38,6 +38,6 @@ plot(X, F, label = 'Model for WASP-12b')
 xlabel('Distance from Transit Centre Point (m)')
 ylabel('Incident Flux per Pixel Solid Angle (W/m**2/sr)')
 legend(loc='best')
-savefig('Documents/University/Cardiff/Project/Project/Data/model_curve_wasp12b.png', dpi=200)
+savefig('Documents/University/Cardiff/Project/Project/Data/model_curve_hatp25.png', dpi=200)
 show()
 
