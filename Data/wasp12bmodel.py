@@ -29,7 +29,7 @@ app_mag = 11.69
 
 # Call model
 #x, y = model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i, mu, app_mag)
-F, X, F_A = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 100)
+F, X, F_A = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 16)
 #F, D = model(Rstar, a, mu, timestep, app_mag)
 
 # Plot data

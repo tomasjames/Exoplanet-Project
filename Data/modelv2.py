@@ -65,12 +65,10 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     ############ Split exoplanet into arbitrary number of pixels #############
     ##########################################################################
 
-    # Declare empty list to store values of coordinates
-    x_coord, y_coord = [], []
-
     # Generates arbitrary coordinates in pixels and finds those that fit
     # within radius**2 (i.e. pythagorean). This is then used to calculate
     # these values as a fraction of the exoplanet radius.
+    '''
     for x, y in product(np.linspace(-radius, radius, npix), repeat=2):
         if x ** 2 + y ** 2 <= radius**2:
             x_coord.append((x/radius)*Rplanet)
@@ -79,7 +77,26 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     # Converts above lists to arrays for compatibility purposes
     x_coord = np.asarray(x_coord)
     y_coord = np.asarray(y_coord)
+    '''
 
+    x = np.linspace(-radius, +radius, (2*radius+1))
+    y = np.linspace(-radius, +radius, (2*radius+1))
+
+    coords = np.transpose([np.tile(x, len(y)), np.repeat(y, len(x))])
+
+    x_coord = coords[:,0]
+    y_coord = coords[:,1]
+
+    x_exo, y_exo = [], []
+
+    for i in range(len(coords)):
+        if x_coord[i]**2 + y_coord[i]**2 <= radius**2:
+            x_exo.append((x_coord[i]/radius)*Rplanet)
+            y_exo.append((y_coord[i]/radius)*Rplanet)
+
+    # Converts above lists to arrays for compatibility purposes
+    x_exo = np.asarray(x_exo)
+    y_exo = np.asarray(y_exo)
 
     ##########################################################################
     ################### Compute positions relative to star ###################
@@ -99,31 +116,34 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     #Y_pos = a*(np.arcsin(2*pi - radians(i)))    
 
     # Declare array to house distances from centre of star
-    dpix = np.zeros(len(X_pos))
+    dpix = np.zeros((len(x_exo), len(X_pos)))
 
     ##########################################################################
     ############## Determine flux blocked per pixel solid angle ##############
     ##########################################################################
-
+    
     # Determine position (postion from transit midpoint across stellar disk)
     for i in range(0, len(X_pos)):
-        for j in range(0, len(x_coord)):
+        F_block = 0
+        for j in range(0, len(x_exo)):
             
             #X_pos[i] = a*np.sin((phase[i]))
             #X_pos[i] = vorb*T[i]
 
             # Determine distance between centre of planetary disk and stellar disk
             # The numpy.sqrt allows sqrt of an array
-            dpix[i] = np.sqrt(((X_pos[i] + x_coord[j])**2) + y_coord[j]**2)
+            dpix_a = np.sqrt(((X_pos[i] + x_exo[j])**2) + y_exo[j]**2)
+            #dpix[j] = dpix_a
 
             # Loop over intervals of d to calculate flux blocked. If the distance
             # to the exoplanet lies within the radius of the star, the flux blocked
             # is calculated using equation 7 of A, D and S paper. 
             # If it lies outside of the radius of the star, the flux blocked is assigned
             # a 0 value (as is in the array anyway). 
-            if dpix[i] < Rstar:
-                F_A[i] += I_0*(1-mu*(1-np.sqrt(1-(dpix[i]/Rstar)**2)))
-    
+            if dpix_a <= Rstar:
+                F_block += ((1-mu*(1-np.sqrt(1-(dpix_a/Rstar)**2)))/len(x_exo))
+
+        F_A[i] = F_block
 
     ##########################################################################
     ##############  ##############
@@ -131,9 +151,9 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
        
     # Use simplified form of equation 7 to determine off-transit flux
     #F = np.ones(len(X_pos))*(I_0*(1-mu))
-    F = np.ones(len(X_pos))*((5.67e-8)*(6300**4)/(4*np.pi*(Rstar**2)))
+    F = np.ones(len(X_pos))
 
     # Subtract flux blocked from F to determine total flux per unit pixel solid angle 
     tot_F = F - F_A
 
-    return tot_F, X_pos, dpix
+    return tot_F, X_pos, F_A
