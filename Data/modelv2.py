@@ -79,16 +79,28 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     y_coord = np.asarray(y_coord)
     '''
 
+    # Generates arrays of coordinates in x and y planes from -radius
+    # to +radius with 2radius+1 points
     x = np.linspace(-radius, +radius, (2*radius+1))
     y = np.linspace(-radius, +radius, (2*radius+1))
 
+    # Tiles these 2 arrays into cartesian coordinate pairs
     coords = np.transpose([np.tile(x, len(y)), np.repeat(y, len(x))])
 
+    # Splits that 2d array into 1d arrays of all x and y points. This 
+    # differs from x and y by being the (x,y) coordinates of each pair,
+    # whereas x and y is just the dimension of each plane.
     x_coord = coords[:,0]
     y_coord = coords[:,1]
 
+    # Creates list to house values iterated through to see if they lie
+    # within the exoplanet
     x_exo, y_exo = [], []
 
+    # Loops through all pair coordinates to determine if the coordinate
+    # lies within radius**2 (Pythagorean). If it does it is appended to
+    # the list above to create an array of coordinates that are within 
+    # the exoplanet.
     for i in range(len(coords)):
         if x_coord[i]**2 + y_coord[i]**2 <= radius**2:
             x_exo.append((x_coord[i]/radius)*Rplanet)
@@ -97,6 +109,7 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     # Converts above lists to arrays for compatibility purposes
     x_exo = np.asarray(x_exo)
     y_exo = np.asarray(y_exo)
+
 
     ##########################################################################
     ################### Compute positions relative to star ###################
@@ -116,7 +129,8 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     #Y_pos = a*(np.arcsin(2*pi - radians(i)))    
 
     # Declare array to house distances from centre of star
-    dpix = np.zeros((len(x_exo), len(X_pos)))
+    dpix = np.zeros((len(X_pos))
+
 
     ##########################################################################
     ############## Determine flux blocked per pixel solid angle ##############
@@ -125,6 +139,7 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     # Determine position (postion from transit midpoint across stellar disk)
     for i in range(0, len(X_pos)):
         F_block = 0
+        count = 0
         for j in range(0, len(x_exo)):
             
             #X_pos[i] = a*np.sin((phase[i]))
@@ -141,12 +156,16 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
             # If it lies outside of the radius of the star, the flux blocked is assigned
             # a 0 value (as is in the array anyway). 
             if dpix_a <= Rstar:
+                count += 1
                 F_block += ((1-mu*(1-np.sqrt(1-(dpix_a/Rstar)**2)))/len(x_exo))
+
+            print count
 
         F_A[i] = F_block
 
+
     ##########################################################################
-    ##############  ##############
+    ############## Determines the lightcurve values and return ###############
     ##########################################################################
        
     # Use simplified form of equation 7 to determine off-transit flux
@@ -156,4 +175,4 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     # Subtract flux blocked from F to determine total flux per unit pixel solid angle 
     tot_F = F - F_A
 
-    return tot_F, X_pos, F_A
+    return tot_F, X_pos, T

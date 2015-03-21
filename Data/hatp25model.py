@@ -34,7 +34,7 @@ F, X, F_A = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius,
 
 # Plot data
 figure(1)
-plot(X, F, label = 'Model for WASP-12b')
+plot(X, F, label = 'Model for HAT-P-25')
 xlabel('Distance from Transit Centre Point (m)')
 ylabel('Incident Flux per Pixel Solid Angle (W/m**2/sr)')
 legend(loc='best')
