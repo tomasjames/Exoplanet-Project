@@ -9,7 +9,6 @@ Script: Prototype for modelling exoplanetary lightcurves
 
 import numpy as np
 from matplotlib.pyplot import *
-from itertools import product
 
 def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, npix):
 
@@ -129,7 +128,7 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     #Y_pos = a*(np.arcsin(2*pi - radians(i)))    
 
     # Declare array to house distances from centre of star
-    dpix = np.zeros((len(X_pos))
+    #dpix = np.zeros((len(X_pos)))
 
 
     ##########################################################################
@@ -157,7 +156,7 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
             # a 0 value (as is in the array anyway). 
             if dpix_a <= Rstar:
                 count += 1
-                F_block += ((1-mu*(1-np.sqrt(1-(dpix_a/Rstar)**2)))/len(x_exo))
+                F_block += (I_0*(1-mu*(1-np.sqrt(1-(dpix_a/Rstar)**2)))/len(x_exo))
 
             print count
 

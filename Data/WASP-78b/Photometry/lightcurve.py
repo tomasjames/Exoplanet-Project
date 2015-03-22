@@ -41,7 +41,7 @@ calib5 = data[where(data==6)[0],6]
 calib6 = data[where(data==7)[0],6]
 calib7 = data[where(data==8)[0],6]
 calib8 = data[where(data==6)[0],6]
-sky = data[where(data==10)[0],6]
+sky = data[where(data==15)[0],6]
 radius = data[where(data==1)[0],8]
 
 ############################# Read FITS headers ###############################
