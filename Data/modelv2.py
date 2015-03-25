@@ -10,7 +10,7 @@ Script: Prototype for modelling exoplanetary lightcurves
 import numpy as np
 from matplotlib.pyplot import *
 
-def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, npix):
+def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i):
 
     '''
     Takes a planetary system consisting of an exoplanet of mass M_planet
@@ -28,14 +28,14 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     ##########################################################################
 
     # Define constants
-    G = 6.673e-11 # Universal gravitational constant
-    #m_ref = -1.5 # Apparent magnitude of Sirius
-    #I_ref = (40*3.846e26)/(4*np.pi*(9.46e15)**2) # Intensity of Sirius. Units: W/m**2
+    G = 6.673E-11 # Universal gravitational constant
+    m_ref = -1.5 # Apparent magnitude of Sirius
+    I_ref = (40*3.846e26)/(4*np.pi*(9.46e15)**2) # Intensity of Sirius. Units: W/m**2
     # N.B. Above is from I = L/4piR**2 where R = distance from Earth
 
     # Determine intensity of star (from apparent magnitude equation)
-    #I_0 = I_ref*10**((2.5)*(m_ref-11.69))
-    I_0 = 1
+    I_0 = I_ref*10**((2.5)*(13.19-11.69))
+    #I_0 = 0.001
 
 
     ##########################################################################
@@ -84,7 +84,7 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     y = np.linspace(-radius, +radius, (2*radius+1))
 
     # Tiles these 2 arrays into cartesian coordinate pairs
-    coords = np.transpose([np.tile(x, len(y)), np.repeat(y, len(x))])
+    coords = np.transpose([np.tile(x, len(y-1)), np.repeat(y, len(x-1))])
 
     # Splits that 2d array into 1d arrays of all x and y points. This 
     # differs from x and y by being the (x,y) coordinates of each pair,
@@ -109,6 +109,9 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     x_exo = np.asarray(x_exo)
     y_exo = np.asarray(y_exo)
 
+    print x_exo*(radius/Rplanet)
+    print y_exo*(radius/Rplanet)
+
 
     ##########################################################################
     ################### Compute positions relative to star ###################
@@ -125,7 +128,9 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     F_A = np.zeros(len(X_pos))
 
     # Determine y position (distance perpendicular to x position)
-    #Y_pos = a*(np.arcsin(2*pi - radians(i)))    
+    #Y_pos = a*(np.arcsin(2*pi - radians(i)))  
+    #Y_pos = a*(np.tan(i))  
+    Y_pos = 0
 
     # Declare array to house distances from centre of star
     #dpix = np.zeros((len(X_pos)))
@@ -136,18 +141,17 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     ##########################################################################
     
     # Determine position (postion from transit midpoint across stellar disk)
-    for i in range(0, len(X_pos)):
+    for i in range(len(X_pos)):
         F_block = 0
         count = 0
-        for j in range(0, len(x_exo)):
+        for j in range(len(x_exo)):
             
             #X_pos[i] = a*np.sin((phase[i]))
             #X_pos[i] = vorb*T[i]
 
             # Determine distance between centre of planetary disk and stellar disk
             # The numpy.sqrt allows sqrt of an array
-            dpix_a = np.sqrt(((X_pos[i] + x_exo[j])**2) + y_exo[j]**2)
-            #dpix[j] = dpix_a
+            dpix_a = np.sqrt(((X_pos[i] + x_exo[j])**2) + (Y_pos + y_exo[j])**2)
 
             # Loop over intervals of d to calculate flux blocked. If the distance
             # to the exoplanet lies within the radius of the star, the flux blocked
@@ -156,9 +160,8 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
             # a 0 value (as is in the array anyway). 
             if dpix_a <= Rstar:
                 count += 1
-                F_block += (I_0*(1-mu*(1-np.sqrt(1-(dpix_a/Rstar)**2)))/len(x_exo))
 
-            print count
+                F_block += (I_0*(1-mu*(1-np.sqrt(1-(dpix_a/Rstar)**2)))/len(x_exo))
 
         F_A[i] = F_block
 
@@ -169,7 +172,7 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
        
     # Use simplified form of equation 7 to determine off-transit flux
     #F = np.ones(len(X_pos))*(I_0*(1-mu))
-    F = np.ones(len(X_pos))
+    F = np.ones(len(X_pos))*1.23
 
     # Subtract flux blocked from F to determine total flux per unit pixel solid angle 
     tot_F = F - F_A

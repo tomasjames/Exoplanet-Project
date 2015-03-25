@@ -40,7 +40,12 @@ calib4 = data[where(data==5)[0],6]
 calib5 = data[where(data==6)[0],6]
 calib6 = data[where(data==7)[0],6]
 calib7 = data[where(data==8)[0],6]
-calib8 = data[where(data==6)[0],6]
+calib8 = data[where(data==9)[0],6]
+calib9 = data[where(data==10)[0],6]
+calib10 = data[where(data==11)[0],6]
+calib11 = data[where(data==12)[0],6]
+calib12 = data[where(data==13)[0],6]
+calib13 = data[where(data==14)[0],6]
 sky = data[where(data==15)[0],6]
 radius = data[where(data==1)[0],8]
 
@@ -180,6 +185,11 @@ curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 curve6, error6 = lightcurve(source, calib6, sky, pix, dark, rdnoise)
 curve7, error7 = lightcurve(source, calib7, sky, pix, dark, rdnoise)
 curve8, error8 = lightcurve(source, calib8, sky, pix, dark, rdnoise)
+curve9, error9 = lightcurve(source, calib9, sky, pix, dark, rdnoise)
+curve10, error10 = lightcurve(source, calib10, sky, pix, dark, rdnoise)
+curve11, error11 = lightcurve(source, calib11, sky, pix, dark, rdnoise)
+curve12, error12 = lightcurve(source, calib12, sky, pix, dark, rdnoise)
+curve13, error13 = lightcurve(source, calib13, sky, pix, dark, rdnoise)
 
 
 ################################## Plot data ##################################
@@ -226,3 +236,67 @@ xlabel('Frame Number')
 ylabel('Calibrated Flux')
 legend(loc='best')
 savefig('curve5.png')
+
+figure(10)
+errorbar(frames, curve6, yerr=error6)
+plot(frames, curve6, 'r.', label='Calibrated wrt calib6')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve6.png')
+
+figure(11)
+errorbar(frames, curve7, yerr=error7)
+plot(frames, curve7, 'r.', label='Calibrated wrt calib7')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve7.png')
+
+figure(12)
+errorbar(frames, curve8, yerr=error8)
+plot(frames, curve8, 'r.', label='Calibrated wrt calib8')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve8.png')
+
+figure(13)
+errorbar(frames, curve9, yerr=error9)
+plot(frames, curve9, 'r.', label='Calibrated wrt calib9')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve9.png')
+
+figure(14)
+errorbar(frames, curve10, yerr=error10)
+plot(frames, curve10, 'r.', label='Calibrated wrt calib10')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve10.png')
+
+figure(15)
+errorbar(frames, curve11, yerr=error11)
+plot(frames, curve11, 'r.', label='Calibrated wrt calib11')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve11.png')
+
+figure(16)
+errorbar(frames, curve12, yerr=error12)
+plot(frames, curve12, 'r.', label='Calibrated wrt calib12')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve5.png')
+
+figure(17)
+errorbar(frames, curve13, yerr=error13)
+plot(frames, curve13, 'r.', label='Calibrated wrt calib13')
+xlabel('Frame Number')
+ylabel('Calibrated Flux')
+legend(loc='best')
+savefig('curve13.png')
