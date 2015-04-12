@@ -23,11 +23,12 @@ start = 16340 # s
 nobs = 181 # Number of observations
 a = 0.02343*149.6e9 # m
 i = 86.0 # deg
-mu = 1
+mu = 0.6
+sangle = 1./36.
 
 # Call model
 #x, y = model(Mstar, Rstar, Mplanet, Rplanet, radius, obs_end, trans_mid, nobs, a, i, mu, app_mag)
-F, X, F_A = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 100)
+F, X, F_A, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 100, sangle)
 #F, D = model(Rstar, a, mu, timestep, app_mag)
 
 # Plot data
@@ -35,6 +36,7 @@ figure(1)
 plot(X, F, label = 'Model for QATAR-1b')
 xlabel('Distance from Transit Centre Point (m)')
 ylabel('Incident Flux per Pixel Solid Angle (W/m**2/sr)')
+ylim(0.95, 1.03)
 legend(loc='best')
 savefig('Documents/University/Cardiff/Project/Project/Data/model_curve_qatar1b.png', dpi=200)
 show()

@@ -185,7 +185,8 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
 
     # The fractional change in flux is proportional to the sqaure of the radius
     # of the exoplanet divided by the square of the stellar radius. 
-    det_Rplanet = np.sqrt(Rstar**2)*np.sqrt(delta_F/F[0])
+
+    det_Rplanet = np.sqrt((Rstar**2)*(delta_F/F[0]))
 
     print '\n The estimated radius of the exoplanet is', det_Rplanet, 'm. \n'
 

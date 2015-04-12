@@ -10,14 +10,16 @@ Script: Transit Curve for WASP-12 b
 ############################## Import modules #################################
 
 from os import *
-from numpy import *
+import numpy as np
 from matplotlib.pyplot import *
 from pyfits import *
+from modelv2 import *
+
 
 ############################### Read data #####################################
 
 # Read photometry data
-data = genfromtxt('results.txt', dtype = 'float64')
+data = np.genfromtxt('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/results.txt', dtype = 'float64')
 
 
 ##################### Extract quantities of interest ##########################
@@ -33,14 +35,14 @@ the sky aperture. Anything in between these two numbers is a calibration star.
 '''
 
 # Extract source, calibration star and sky in data
-source = data[where(data==1)[0],6]
-calib1 = data[where(data==2)[0],6]
-calib2 = data[where(data==3)[0],6]
-calib3 = data[where(data==4)[0],6]
-calib4 = data[where(data==5)[0],6]
-calib5 = data[where(data==6)[0],6]
-sky = data[where(data==7)[0],6]
-radius = data[where(data==1)[0],8]
+source = data[np.where(data==1)[0],6]
+calib1 = data[np.where(data==2)[0],6]
+calib2 = data[np.where(data==3)[0],6]
+calib3 = data[np.where(data==4)[0],6]
+calib4 = data[np.where(data==5)[0],6]
+calib5 = data[np.where(data==6)[0],6]
+sky = data[np.where(data==7)[0],6]
+radius = data[np.where(data==1)[0],8]
 
 
 ############################# Read FITS headers ###############################
@@ -50,9 +52,9 @@ fname = []
 
 # Walks through all files in /Raw/ and appends file name to fname if it 
 # ends in .fits. Note: "../Raw/" steps up a directory to access /Raw/.
-for file in listdir("../Raw"):
+for file in listdir("/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Raw"):
     if file.endswith(".fits"):
-        fname.append('../Raw/' + file)
+        fname.append('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Raw/' + file)
 
 
 ########## Determine read noise and dark current from FITS headers ############
@@ -60,11 +62,27 @@ for file in listdir("../Raw"):
 # Declare lists to house valies
 rdnoise = 13.5 
 dark = 0
-pix = pi*(radius)**2
+pix = np.pi*(radius)**2
 
+############################# Declare constants ################################
+
+Mstar = 1.35*1.9891e30 # kg
+Rstar = 1.599*6.955e8 # m
+Mplanet = 1.404*1.9e27 # kg
+Rplanet = 1.736*(6.9e7) # m
+radius = 4. # 4 pixel radii planet
+end = 35200 # s
+mid = 26257 # s
+start = 17600 # s
+nobs = 240 # Number of observations
+a = 0.02293*149.6e9 # m
+i = 86.0 # deg
+mu = 0.49
+app_mag = 11.69
+sangle = 1./65.
 
 ########### Plot data to determine quality of calibration stars ###############
-
+'''
 figure(1)
 
 subplot(2, 2, 1)
@@ -130,7 +148,7 @@ figure(4)
 plot((calib4-sky)/(calib5-sky), label='(calib4-sky)/(calib5-sky)')
 ylabel('Background Subtracted Count')
 legend(loc='best')
-
+'''
 
 ########################## Define lightcurve equation #########################
 
@@ -150,21 +168,24 @@ def lightcurve(source, calib, sky, pix, dark, rdnoise):
 
     # Takes the first and last 10 off-transit values and averages 
     # them for a baseline    
-    ave = average(curve[0:10])
+    ave = (np.average(curve[0:20]) + np.average(curve[-20:-1]))/2
     
     # Normalises the curve using the baseline calculated earlier    
     norm = curve/ave
 
     # Determines the SNR of both the source and calib stars using the equation
     # for SNR from Handbook of CCD Astronomy
-    error_source = sqrt((source+sky)+pix*(mean(dark)+mean(rdnoise)**2))
-    error_calib = sqrt((calib+sky)+pix*(mean(dark)+mean(rdnoise)**2))
-    error_sky = sqrt((sky)+pix*(mean(dark)+mean(rdnoise)**2)) 
+    error_source = np.sqrt((source+sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2))
+    error_calib = np.sqrt((calib+sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2))
+    error_sky = np.sqrt((sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2)) 
     
     # Calculations the error in the curve equation
-    error_curve = sqrt(((error_source**2)*(calib-source)**2 + (error_sky**2)*(source-calib)**2 + (error_calib**2)*(source-sky)**2)/(calib-sky)**4)
+    error_curve = np.sqrt(((error_source**2)*(calib-source)**2 + (error_sky**2)*(source-calib)**2 + (error_calib**2)*(source-sky)**2)/(calib-sky)**4) 
+
+    error_norm  = error_curve/ave
     
-    return curve, error_curve
+    #return curve, error_curve
+    return norm, error_norm
     
 ############### Run function to produce 3 calibrated data sets ################
 
@@ -174,53 +195,74 @@ curve3, error3 = lightcurve(source, calib3, sky, pix, dark, rdnoise)
 curve4, error4 = lightcurve(source, calib4, sky, pix, dark, rdnoise)
 curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 
+################################## Call model #################################
+
+F, X, T, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i, sangle)
 
 ################################## Plot data ##################################
 
 # Define array of frames to plot over
-frames = linspace(1, len(source), len(source))
+frames = np.linspace(1, len(source), len(source))
+frames_model = np.linspace(1, 220, nobs)
 
 figure(6)
-plot(frames, curve1, 'r.', label='Calibrated wrt calib1')
+#plot(frames, curve1, 'r.', label='Calibrated wrt calib1')
 errorbar(frames, curve1, fmt='', yerr=error1, label='Calibrated wrt calib1')
 #plot(frames, linspace(1,1,len(frames)))
+plot(frames_model, F)
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
 legend(loc='best')
-savefig('curve1.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve1.png')
+
+det_Rplanet_1 = np.sqrt((Rstar**2)*(np.average(curve1[0:20]) - min(curve1)))
 
 figure(7)
-plot(frames, curve2, 'r.', label='Calibrated wrt calib2')
-errorbar(frames, curve2, fmt='', yerr=error2)
+#plot(frames, curve2, 'r.', label='Calibrated wrt calib2')
+errorbar(frames, curve2, fmt='', yerr=error2, label='Calibrated wrt calib2')
+plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
 legend(loc='best')
-savefig('curve2.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve2.png')
+
+det_Rplanet_2 = np.sqrt((Rstar**2)*(np.average(curve2[0:20]) - min(curve2)))
 
 figure(8)
-plot(frames, curve3, 'r.', label='Calibrated wrt calib3')
-errorbar(frames, curve3, fmt='', yerr=error3)
+#plot(frames, curve3, 'r.', label='Calibrated wrt calib3')
+errorbar(frames, curve3, fmt='', yerr=error3, label='Calibrated wrt calib3')
+plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
 legend(loc='best')
-savefig('curve3.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve3.png')
+
+det_Rplanet_3 = np.sqrt((Rstar**2)*(np.average(curve3[0:20]) - min(curve3)))
 
 figure(9)
-plot(frames, curve4, 'r.', label='Calibrated wrt calib4')
-errorbar(frames, curve4, fmt='', yerr=error4)
+#plot(frames, curve4, 'r.', label='Calibrated wrt calib4')
+errorbar(frames, curve4, fmt='', yerr=error4, label='Calibrated wrt calib4')
+plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
 legend(loc='best')
-savefig('curve4.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve4.png')
+
+det_Rplanet_4 = np.sqrt((Rstar**2)*(np.average(curve4[0:20]) - min(curve4)))
 
 figure(10)
-plot(frames, curve5, 'r.', label='Calibrated wrt calib5')
-errorbar(frames, curve5, fmt='', yerr=error5)
+#plot(frames, curve5, 'r.', label='Calibrated wrt calib5')
+errorbar(frames, curve5, fmt='', yerr=error5, label='Calibrated wrt calib5')
+plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
 legend(loc='best')
-savefig('curve5.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve5.png')
+
+det_Rplanet_5 = np.sqrt((Rstar**2)*(np.average(curve5[0:20]) - min(curve5)))
+
+close('all')
