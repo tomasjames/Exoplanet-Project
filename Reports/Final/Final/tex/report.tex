@@ -35,7 +35,7 @@
 \DeclareNameAlias{sortname}{last-first} % Change ordering of name
 
 % \bibliography{<mybibfile>}% ONLY selects .bib file; syntax for version <= 1.1b
-\addbibresource{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/tex/report.bib}% Syntax for version >= 1.2
+\addbibresource{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib}% Syntax for version >= 1.2
 
 \usepackage{abstract} % Allows abstract customization
 \renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
@@ -80,7 +80,7 @@
 %-----------------------------------------------------------------
 
 \begin{abstract}
-For this project, the transiting extrasolar planets WASP-22 b, WASP-78 b and HATS-5 b were chosen to be observed using LCOGT telescopes in the Southern Hemisphere. The data obtained from these observations will then be used to computationally model the observed transit, allowing the calculation of orbital and physical parameters about each exoplanet. Conclusions about each planet will be compared and contrasted to the other planets observed. The parameters determined will also be compared to the known quantities for each planet.
+For this project, the transiting extrasolar planets WASP-22 b, WASP-78 b and HATS-5 b were chosen to be observed using LCOGT telescopes in the Southern Hemisphere. The data obtained from these observations was then analysed using aperture photometry in GAIA in order to plot lightcurves for each dataset. The lightcurves produced did not show any visible transits, so datasets of the extrasolar planets HAT-P-25, Qatar-1b and WASP-12b (provided by project supervisor Dr. E. L. Gomez) were analysed in replacement. These lightcurves were then used to estimate upper limits for the radius of each exoplanet. Furthermore the Exoplanetary Transit Pixelisation Model developed by \textcite{model} was adapted in order to computationally model the transits leading to further estimates of exoplanetary radius. These results were then compared with each other, as well as the known published values.
 \end{abstract}
 
 %-----------------------------------------------------------------
@@ -97,10 +97,10 @@ For this project, the transiting extrasolar planets WASP-22 b, WASP-78 b and HAT
 \section{Introduction}
 The discovery of the first extrasolar planet by \textcite{first} introduced a field into astronomical research that is now one of the most exciting and fast moving fields in modern astrophysics. Subsequent detections, such as the first main-sequence extrasolar planet by \textcite{MQ} continue to reveal a more diverse and rich spectrum of exoplanets. More than 20 years on from these detections, the \textcite{exo} records 1854 \footnote{As of Friday 12th December 2014} extrasolar planets that have been discovered using a variety of detection methods utilising both ground and satellite based telescopes in a multitude of collaborative missions. These vary from discovering new exoplanets to actively searching for Earth analogs that could, under the right circumstances, harbour life.
 
-One of the most prominent and substantial of these missions is NASA's Kepler mission. Launched in [date], the primary objective of Kepler is to detect 
+One of the most prominent and substantial of these missions is NASA's Kepler mission. Launched on March 7th 2009, the primary objective of Kepler is to detect exoplanets of Earth size that reside in or close to the habitable zone of their parent stars. A key advantage of Kepler is that it orbits the Sun and so its observations are not constrained by Earth's atmosphere.  Shortly after launch, Kepler encountered mechanical failure that limited its ability to hunt for Earth sized planets. In 2014, the K2 mission - a modified form of Kepler's initial mission to take into account the mechanical failures - was greenlit such that Kepler now searches primarily for habitable planets orbiting red-dwarf Stars along with potential supernova events and star forming regions. In spite of this Kepler has still discovered over 1000 confirmed exoplanets and is synonymous with the hunt for extrasolar planets, having discovered a large portion of the current dataset [insert some more rigorous statistics].
 
 \subsection{Extrasolar Planets}
-Extrasolar planets - or exoplanets - are planetary objects orbiting stars outside of the Solar System.  
+Extrasolar planets - or exoplanets - are planetary objects orbiting stars outside of the Solar System. The Solar System itself is the subject of intense study, largely because of its relative ease to study. In comparison, exoplanetary detection is much harder, as Kepler estimates the closest Earth-like planet is still 9ly from Earth [reference].  Statistics place the number of potential planetary systems at 400 billion [reference], but relatively little is known as to their analogy to the Solar System. Is the Solar System a common planetary system or is it a much more peculiar system, one of chance and luck rather than mean statistics?  
 
 Since the detections made by \citeauthor{first} and \citeauthor{MQ} a multitude of dedicated projects have been launched with the primary aim of detecting and characterising exoplanets. These vary from ground-based telescopes such as WASP and HAT to spaced-based telescopes such as Kepler and CoRoT. Uniquely these missions observe a wide distribution of exoplanets, effectively allowing the formation and evolution of planetary systems to be studied. 
 
@@ -173,10 +173,10 @@ To better understand the orbital behaviour of exoplanets, along with their calcu
 As can be seen in Figure~\ref{log_period_major} the loglog plot of orbital period vs semi-major axis produces a very well defined and characteristic straight line. Kepler's 3rd Law relates period and semi-major axis as defined in equation \ref{Kepler}.
 
 \begin{equation} \label{Kepler}
-    T^{2} \propto a^{3} 
+    T^{2} = \frac{4\pi^2}{GM} a^{3} 
 \end{equation}
 
-In this instance T is the orbital period and a is the semi-major axis. Given that orbital systems are bound by Kepler's Laws (the Jupiter and Earth points confirm that this is the case for those 2 Solar System planets) the shape of the graph is to be expected. Interestingly a number of points lie off the main sequence of data in Figure ~\ref{log_period_major}. Regrettably the \textcite{exo} does not include error estimations for all exoplanet entries, meaning firm conclusions about why these points lie off of the main sequence cannot be drawn without speculation.
+In this instance T is the orbital period, a is the semi-major axis, G is the universal gravitational constant and M is the mass of the host star. Given that orbital systems are bound by Kepler's Laws (the Jupiter and Earth points confirm that this is the case for those 2 Solar System planets) the shape of the graph is to be expected, however Kepler's 3rd law uses the mass of the body being orbited as a proportionality constant as illustrated. In this case, this constant is the mass of the host star. This means that whilst the shape of the graph is correct, a number of distinct lines is to be expected due to the varying masses of host stars. The existence of one primary line points to there being limitations on the mass of the host star, however a more likely explanation is that Kepler, having detecting the majority of known exoplanets, has introduced bias into the dataset owing to it primarily looking for Solar System analogues. The erroneous Kepler data points that do not appear to fit this trend could be detections during the adapted K2 mission. Interestingly a number of points lie off this main line in Figure ~\ref{log_period_major}, even factoring for the potential biases. Regrettably the \textcite{exo} does not include error estimations for all exoplanet entries, meaning firm conclusions about why these points lie off of the main sequence cannot be drawn without speculation.
 
 Figure~\ref{log_period_major} also allows analysis of the sensitivity of each detection method. For example the exoplanet with the fastest orbital period and smallest semi-major axis was detected using the pulsar timing method, whilst the exoplanet with the slowest period and largest semi-major axis was detected using the direct imaging method. Direct imaging does however detect exoplanets across the most diverse range of periods and semi-major axes of those detection methods considered, ranging from the second-smallest semi-major axis to the largest.
 
@@ -240,9 +240,10 @@ Whilst it would have been preferable to use one sensor across all observations a
 % Exoplanets for Consideration
 %-----------------------------------------------------------------
 
-\section{Exoplanets for Observation}
+\section{Observed Exoplanets}
 Observations were required to be obtained during the time frame October 2014 - December 2014. To determine which exoplanets were visible during this period, the STARALT tool \parencite{staralt} was used in conjuction with the Exoplanet Transit Database \parencite{etd}. Only transiting exoplanets were considered for this project as equipment required for other detection methods was not available at the observatories used. 
 
+\subsection{Selection Criteria}
 Once the number of visible sources was determined, the number of those sources that were undergoing visible transits during the required time period was determined using the ETD's Transit Prediction function. These were crossreferenced using the STARALT function STARMULT, which produces an optimal observing date for a given source based on the observatory coordinates in Table~\ref{observatory} and stipulation that observations must occur above an altitude of 30$^\circ$\ above the horizonfootnote{The airmass below this altitude would have rendered any observations highly prone to errors from atmospheric effects}. The candidates for observation can be seen in Table ~\ref{planets}.
 
 \begin{table}[H]
@@ -258,6 +259,8 @@ Once the number of visible sources was determined, the number of those sources t
     \caption{A table showing the exoplanets to be observed in this project along with the proposed date of observation and the coordinates, in RA/Dec, of each source \parencite{etd}.}
     \label{planets}
 \end{table}
+
+
 
 %-----------------------------------------------------------------
 % Methodology

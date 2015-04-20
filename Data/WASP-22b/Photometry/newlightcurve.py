@@ -18,7 +18,7 @@ from pyfits import *
 ############################### Read data #####################################
 
 # Read photometry data
-data = genfromtxt('results.txt', dtype = 'float64')
+data = genfromtxt('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-22b/Photometry/results.txt', dtype = 'float64')
 
 
 ##################### Extract quantities of interest ##########################
@@ -51,9 +51,9 @@ fname = []
 
 # Walks through all files in /Raw/ and appends file name to fname if it 
 # ends in .fits. Note: "../Raw/" steps up a directory to access /Raw/.
-for file in listdir("../Raw"):
+for file in listdir("/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw"):
     if file.endswith(".fits"):
-        fname.append('../Raw/' + file)
+        fname.append('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/' + file)
 
 
 ########## Determine read noise and dark current from FITS headers ############
@@ -192,33 +192,38 @@ figure(6)
 errorbar(frames, curve1, fmt='', yerr=error1, label='Calibrated wrt calib1')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-22b')
 legend(loc='best')
-savefig('curve1.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-22b/Photometry/curve1.png')
 
 figure(7)
 errorbar(frames, curve2, fmt='', yerr=error2, label='Calibrated wrt calib2')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-22b')
 legend(loc='best')
-savefig('curve2.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-22b/Photometry/curve2.png')
 
 figure(8)
 errorbar(frames, curve3, fmt='', yerr=error3, label='Calibrated wrt calib3')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-22b')
 legend(loc='best')
-savefig('curve3.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-22b/Photometry/curve3.png')
 
 figure(9)
 errorbar(frames, curve4, fmt='', yerr=error4, label='Calibrated wrt calib4')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-22b')
 legend(loc='best')
-savefig('curve4.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-22b/Photometry/curve4.png')
 
 figure(10)
 errorbar(frames, curve5, fmt='', yerr=error5, label='Calibrated wrt calib5')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-22b')
 legend(loc='best')
-savefig('curve5.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-22b/Photometry/curve5.png')

@@ -13,6 +13,7 @@ from os import *
 from numpy import *
 from matplotlib.pyplot import *
 from pyfits import *
+from sklearn.metrics import mean_squared_error
 
 # Import model
 from modelv2 import *
@@ -75,13 +76,13 @@ radius = 4 # 4 pixel radii planet
 end = 36537 # s
 mid = 26257 # s
 start = 16257 # s
-nobs = 240 # Number of observations
+nobs = 109 # Number of observations
 dur = 36537-22157 # Frame 222 - Frame 40
 a = 0.0466*149.6E9 # m
 i = 86.0 # deg
-mu = 0.6
+mu = 0.522
 app_mag = 11.69
-sangle = 1./48. # Solid angle
+sangle = 1./50. # Solid angle
 
 '''
 ########### Plot data to determine quality of calibration stars ###############
@@ -171,7 +172,7 @@ def lightcurve(source, calib, sky, pix, dark, rdnoise):
 
     # Takes the first and last 10 off-transit values and averages 
     # them for a baseline    
-    ave = average(curve[0:10])
+    ave = (np.average(curve[0:20]) + np.average(curve[-20:-1]))/2
     
     # Normalises the curve using the baseline calculated earlier    
     norm = curve/ave
@@ -203,6 +204,36 @@ curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 
 F, X, T, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i, sangle)
 
+####################### Determine radius of exoplanet ########################
+
+delta_F_1 = np.average(curve1[0:20]) - np.average(curve1[40:70])
+delta_F_2 = np.average(curve2[0:20]) - np.average(curve2[40:70])
+delta_F_3 = np.average(curve3[0:20]) - np.average(curve3[40:70])
+delta_F_4 = np.average(curve4[0:20]) - np.average(curve4[40:70])
+delta_F_5 = np.average(curve5[0:20]) - np.average(curve5[40:70])
+
+det_Rplanet_1 = np.sqrt((Rstar**2)*(delta_F_1)*np.average(curve1[0:20]))
+det_Rplanet_2 = np.sqrt((Rstar**2)*(delta_F_2))
+det_Rplanet_3 = np.sqrt((Rstar**2)*(delta_F_3))
+det_Rplanet_4 = np.sqrt((Rstar**2)*(delta_F_4))
+det_Rplanet_5 = np.sqrt((Rstar**2)*(delta_F_5))
+
+##################### Compute error in model to data fit #####################
+
+error_fit_1 = np.sqrt(mean_squared_error(curve1, F))
+error_fit_2 = np.sqrt(mean_squared_error(curve2, F))
+error_fit_3 = np.sqrt(mean_squared_error(curve3, F))
+error_fit_4 = np.sqrt(mean_squared_error(curve4, F))
+error_fit_5 = np.sqrt(mean_squared_error(curve5, F))
+
+##################### Compute error in calculated radius #####################
+
+Rplanet_1_error = np.sqrt((delta_F_1/curve1[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_1/curve1[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_1/curve1[0]**3)*(error1[0])**2)
+Rplanet_2_error = np.sqrt((delta_F_2/curve2[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_2/curve2[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_2/curve2[0]**3)*(error2[0])**2)
+Rplanet_3_error = np.sqrt((delta_F_3/curve3[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_3/curve3[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_3/curve3[0]**3)*(error3[0])**2)
+Rplanet_4_error = np.sqrt((delta_F_4/curve4[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_4/curve4[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_4/curve4[0]**3)*(error4[0])**2)
+Rplanet_5_error = np.sqrt((delta_F_5/curve5[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_5/curve5[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_5/curve5[0]**3)*(error5[0])**2)
+
 ################################## Plot data ##################################
 
 # Define array of frames to plot over
@@ -214,13 +245,15 @@ figure(1)
 errorbar(frames_data, curve1, fmt='', yerr=error1, label='Calibrated wrt calib1')
 plot(frames_model, F, label='EPTM')
 #plot(frames, linspace(1,1,len(frames)))
-#ylim(1.6,1.7)
+ylim(0.96,1.02)
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HAT-P-25')
+text(20, 0.968, 'Radius: ('+str(det_Rplanet_1).format(1.0e9)+str(' +/- ')+str(Rplanet_1_error).format(1.0e9)+str(') m'))
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Photometry/Graphs/curve1.png')
 
-det_Rplanet = np.sqrt((Rstar**2)*(1 - min(curve1)))
+
 
 figure(2)
 #plot(frames, curve2, 'r.', label='Calibrated wrt calib2')
@@ -228,6 +261,7 @@ errorbar(frames_data, curve2, fmt='', yerr=error2, label='Calibrated wrt calib2'
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HAT-P-25')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Photometry/Graphs/curve2.png')
 
@@ -237,6 +271,7 @@ errorbar(frames_data, curve3, fmt='', yerr=error3)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HAT-P-25')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Photometry/Graphs/curve3.png')
 
@@ -246,6 +281,7 @@ errorbar(frames_data, curve4, fmt='', yerr=error4)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HAT-P-25')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Photometry/Graphs/curve4.png')
 
@@ -255,6 +291,7 @@ errorbar(frames_data, curve5, fmt='', yerr=error5)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HAT-P-25')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Photometry/Graphs/curve5.png')
 

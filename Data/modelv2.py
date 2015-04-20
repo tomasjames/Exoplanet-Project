@@ -187,6 +187,13 @@ def model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, 
     # of the exoplanet divided by the square of the stellar radius. 
     det_Rplanet = np.sqrt(Rstar**2)*np.sqrt(delta_F/F[0])
 
-    print '\n The estimated radius of the exoplanet is', det_Rplanet, 'm. \n'
+    ##########################################################################
+    ############################ Compute errors ##############################
+    ##########################################################################
+
+    
+
+    print '\n The estimated radius of the exoplanet according to the EPTM model'
+    print 'is', det_Rplanet, 'm. \n'
 
     return tot_F, X_pos, T, det_Rplanet

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.22)  15 MAR 2015 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.22)  17 APR 2015 20:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,7 +672,57 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
 
-(./report.bbl)
+(./report.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'exo':
+(biblatex)                - Datamodel: Entry 'exo' (/Users/tomasjames/Documents
+/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid 
+format 'n.d.' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'orac-dr':
+(biblatex)                - Datamodel: Entry 'orac-dr' (/Users/tomasjames/Docum
+ents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Inva
+lid format '07/12/2014' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '1m':
+(biblatex)                - Datamodel: Entry '1m' (/Users/tomasjames/Documents/
+University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid f
+ormat 'n.d.' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'pipeline':
+(biblatex)                - Datamodel: Entry 'pipeline' (/Users/tomasjames/Docu
+ments/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Inv
+alid format 'n.d.' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'sites':
+(biblatex)                - Datamodel: Entry 'sites' (/Users/tomasjames/Documen
+ts/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invali
+d format 'n.d.' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'etd':
+(biblatex)                - Datamodel: Entry 'etd' (/Users/tomasjames/Documents
+/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid 
+format 'n.d.' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'staralt':
+(biblatex)                - Datamodel: Entry 'staralt' (/Users/tomasjames/Docum
+ents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Inva
+lid format '10 September 2013' of date field 'urldate' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 72.
 Package biblatex Info: Reference segment=0 on input line 72.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <24> not available
@@ -683,6 +733,7 @@ LaTeX Font Info:    Try loading font information for OML+zplm on input line 75.
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 75.
+
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
@@ -723,21 +774,6 @@ l.92
       [1
 
 ]
-
-LaTeX Warning: Citation 'first' on page 2 undefined on input line 98.
-
-
-LaTeX Warning: Citation 'MQ' on page 2 undefined on input line 98.
-
-
-LaTeX Warning: Citation 'exo' on page 2 undefined on input line 98.
-
-
-LaTeX Warning: Citation 'first' on page 2 undefined on input line 103.
-
-
-LaTeX Warning: Citation 'MQ' on page 2 undefined on input line 103.
-
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ¨ in font pplr9t!
@@ -745,42 +781,32 @@ Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ¨ in font pplr9t!
 
-LaTeX Warning: Citation 'radius' on page 2 undefined on input line 109.
+
+LaTeX Warning: Citation 'radius' on page 2 undefined on input line 111.
 
 
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/Saved/transit.png, id=77, 451.6875pt x 307.90031pt>
+/Master/img/Saved/transit.png, id=97, 451.6875pt x 307.90031pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
 terim/Master/img/Saved/transit.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
 erim/Master/img/Saved/transit.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/Saved/transit.png used on input line 113.
+/Project/Reports/Interim/Master/img/Saved/transit.png used on input line 115.
 (pdftex.def)             Requested size: 225.84319pt x 153.94977pt.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 114.
-
-
-LaTeX Warning: Citation 'transitimg' on page 2 undefined on input line 114.
-
-
-LaTeX Warning: Citation 'transitimg' on page 2 undefined on input line 114.
-
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 116.
+ [2]
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ™ in font pplr9t!
-[2 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
-rim/Master/img/Saved/transit.png>]
-
-LaTeX Warning: Citation 'false' on page 3 undefined on input line 119.
-
 Missing character: There is no â in font pplb9t!
 Missing character: There is no € in font pplb9t!
 Missing character: There is no ¨ in font pplb9t!
 
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/Saved/radialvelocity.jpg, id=86, 928.46875pt x 935.495pt>
+/Master/img/Saved/radialvelocity.jpg, id=112, 928.46875pt x 935.495pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
 terim/Master/img/Saved/radialvelocity.jpg Graphic file (type jpg)
 
@@ -788,15 +814,10 @@ terim/Master/img/Saved/radialvelocity.jpg Graphic file (type jpg)
 erim/Master/img/Saved/radialvelocity.jpg>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
 /Project/Reports/Interim/Master/img/Saved/radialvelocity.jpg used on input line
- 126.
+ 128.
 (pdftex.def)             Requested size: 185.69046pt x 187.09567pt.
-
-
-LaTeX Warning: Citation 'rvdetect' on page 3 undefined on input line 127.
-
-
-LaTeX Warning: Citation 'rvdetect' on page 3 undefined on input line 127.
-
+ [3 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
+erim/Master/img/Saved/transit.png>]
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ™ in font pplr9t!
@@ -806,156 +827,132 @@ Missing character: There is no ¨ in font pplr9t!
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ™ in font pplr9t!
-
-LaTeX Warning: Citation 'stats' on page 3 undefined on input line 132.
-
 Missing character: There is no â in font pplb9t!
 Missing character: There is no € in font pplb9t!
 Missing character: There is no ¨ in font pplb9t!
-[3 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
+Missing character: There is no â in font pplr9t!
+Missing character: There is no € in font pplr9t!
+Missing character: There is no ¨ in font pplr9t!
+Missing character: There is no â in font pplr9t!
+Missing character: There is no € in font pplr9t!
+Missing character: There is no ¨ in font pplr9t!
+Missing character: There is no â in font pplb9t!
+Missing character: There is no € in font pplb9t!
+Missing character: There is no ¨ in font pplb9t!
+
+
+LaTeX Warning: Citation 'einstein' on page 4 undefined on input line 146.
+
+
+LaTeX Warning: Citation 'micro' on page 4 undefined on input line 146.
+
+[4 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
 rim/Master/img/Saved/radialvelocity.jpg>]
-Missing character: There is no â in font pplr9t!
-Missing character: There is no € in font pplr9t!
-Missing character: There is no ¨ in font pplr9t!
-Missing character: There is no â in font pplr9t!
-Missing character: There is no € in font pplr9t!
-Missing character: There is no ¨ in font pplr9t!
-Missing character: There is no â in font pplb9t!
-Missing character: There is no € in font pplb9t!
-Missing character: There is no ¨ in font pplb9t!
-
-
-LaTeX Warning: Citation 'einstein' on page 4 undefined on input line 144.
-
-
-LaTeX Warning: Citation 'micro' on page 4 undefined on input line 144.
-
-
-LaTeX Warning: Citation 'exo' on page 4 undefined on input line 148.
-
-
-LaTeX Warning: Citation 'first' on page 4 undefined on input line 155.
-
-
-LaTeX Warning: Citation 'exo' on page 4 undefined on input line 155.
-
-
-LaTeX Warning: Citation 'exo' on page 4 undefined on input line 162.
-
-
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/log_period_major.png, id=96, 578.16pt x 433.62pt>
+/Master/img/log_period_major.png, id=136, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
 terim/Master/img/log_period_major.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
 erim/Master/img/log_period_major.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/log_period_major.png used on input line 167
+/Project/Reports/Interim/Master/img/log_period_major.png used on input line 169
 .
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [4]
-
-LaTeX Warning: Citation 'exo' on page 5 undefined on input line 177.
-
-LaTeX Font Info:    Try loading font information for OML+pplx on input line 181
+ [5]
+LaTeX Font Info:    Try loading font information for OML+pplx on input line 183
 .
-LaTeX Font Info:    No file OMLpplx.fd. on input line 181.
+LaTeX Font Info:    No file OMLpplx.fd. on input line 183.
+
 
 LaTeX Font Warning: Font shape `OML/pplx/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 181.
+(Font)              for symbol `textless' on input line 183.
 
-
+[6 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
+rim/Master/img/log_period_major.png>]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/log_radius_mass.png, id=108, 578.16pt x 433.62pt>
+/Master/img/log_radius_mass.png, id=160, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
 terim/Master/img/log_radius_mass.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
 erim/Master/img/log_radius_mass.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/log_radius_mass.png used on input line 187.
+/Project/Reports/Interim/Master/img/log_radius_mass.png used on input line 189.
 
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [5 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/log_period_major.png>]
-
-LaTeX Warning: Citation 'stats' on page 6 undefined on input line 199.
-
-
-LaTeX Warning: Citation 'sites' on page 6 undefined on input line 220.
-
-
-LaTeX Warning: Citation 'sites' on page 6 undefined on input line 220.
-
-[6 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
-rim/Master/img/log_radius_mass.png>]
-
-LaTeX Warning: Citation '1m' on page 7 undefined on input line 226.
-
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 230
+ [7 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
+erim/Master/img/log_radius_mass.png>]
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 232
 .
-LaTeX Font Info:    No file OMSpplx.fd. on input line 230.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 232.
+
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 230.
+(Font)              for symbol `textbullet' on input line 232.
 
-
-LaTeX Warning: Citation 'staralt' on page 7 undefined on input line 242.
-
-
-LaTeX Warning: Citation 'etd' on page 7 undefined on input line 242.
-
-
-LaTeX Warning: Citation 'etd' on page 7 undefined on input line 256.
-
-
-LaTeX Warning: Citation 'etd' on page 7 undefined on input line 256.
-
-[7]
-
-LaTeX Warning: Citation 'orac-dr' on page 8 undefined on input line 288.
-
-
-LaTeX Warning: Citation 'pipeline' on page 8 undefined on input line 288.
-
-
-LaTeX Warning: Citation 'starlink' on page 8 undefined on input line 290.
-
-
+[8]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/aperture_qatar1b.png, id=148, 578.16pt x 433.62pt>
+/Master/img/aperture_qatar1b.png, id=208, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
 terim/Master/img/aperture_qatar1b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
 erim/Master/img/aperture_qatar1b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/aperture_qatar1b.png used on input line 299
+/Project/Reports/Interim/Master/img/aperture_qatar1b.png used on input line 304
 .
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [8]
+ [9] [10 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Report
+s/Interim/Master/img/aperture_qatar1b.png>] [11]
 
-LaTeX Warning: Empty bibliography on input line 338.
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 343.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
-[9 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
-rim/Master/img/aperture_qatar1b.png>] [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 343.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 343.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 343.
+
+
+Package biblatex Warning: No driver for entry type 'image'.
+(biblatex)                Using fallback driver on input line 343.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 343.
+
+
+Package biblatex Warning: No driver for entry type 'image'.
+(biblatex)                Using fallback driver on input line 343.
+
+
+Overfull \hbox (43.9229pt too wide) in paragraph at lines 344--344
+[][]\OT1/pplx/m/n/10 Wolszszan A. and Frail D. A. (1992). \  A plan-e-tary sys-
+tem around the mil-lisec-ond pul-sar PSR1257 + 12". \OT1/pplx/m/it/10 Na-ture \
+OT1/pplx/m/n/10 355.doi:10.1038/355145a0,
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+[12
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 4930C658B9AB8600F3D4DB88F8022C68;909.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 2D3F21B491614FB5F060DFF8AFEB0FFD;724
-(rerunfilecheck)             After:  C7E1E1162217B9713F0A1FAA13FB3F99;844.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -970,30 +967,31 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 13619 strings out of 493117
- 221231 string characters out of 6135432
- 656080 words of memory out of 5000000
- 16843 multiletter control sequences out of 15000+600000
- 39205 words of font info for 98 fonts, out of 8000000 for 9000
+ 13675 strings out of 493117
+ 222033 string characters out of 6135432
+ 656075 words of memory out of 5000000
+ 16875 multiletter control sequences out of 15000+600000
+ 42105 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,44p,911b,1476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,78p,1450b,1476s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-urw/palatino/uplri8a.pfb>
-Output written on report.pdf (12 pages, 331632 bytes).
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
+rw/palatino/uplri8a.pfb>
+Output written on report.pdf (14 pages, 356893 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

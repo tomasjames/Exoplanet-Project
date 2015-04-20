@@ -16,7 +16,7 @@ from matplotlib.pyplot import *
 ############################### Read data #####################################
 
 # Read photometry data
-data = genfromtxt('results.txt', dtype = 'float64')
+data = genfromtxt('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/results.txt', dtype = 'float64')
 
 
 ##################### Extract quantities of interest ##########################
@@ -53,13 +53,13 @@ radius = data[where(data==1)[0],8]
 
 # Declare list to house filenames
 fname = []
-
+'''
 # Walks through all files in /Raw/ and appends file name to fname if it 
 # ends in .fits. Note: "../Raw/" steps up a directory to access /Raw/.
 for file in listdir("../Raw"):
     if file.endswith(".fits"):
         fname.append('../Raw/' + file)
-
+'''
 
 ########## Determine read noise and dark current from FITS headers ############
 
@@ -159,21 +159,24 @@ def lightcurve(source, calib, sky, pix, dark, rdnoise):
 
     # Takes the first and last 10 off-transit values and averages 
     # them for a baseline    
-    ave = average(curve[0:10])
+    ave = (np.average(curve[0:20]) + np.average(curve[-20:-1]))/2
     
     # Normalises the curve using the baseline calculated earlier    
     norm = curve/ave
 
     # Determines the SNR of both the source and calib stars using the equation
     # for SNR from Handbook of CCD Astronomy
-    error_source = sqrt((source+sky)+pix*(mean(dark)+mean(rdnoise)**2))
-    error_calib = sqrt((calib+sky)+pix*(mean(dark)+mean(rdnoise)**2))
-    error_sky = sqrt((sky)+pix*(mean(dark)+mean(rdnoise)**2)) 
+    error_source = np.sqrt((source+sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2))
+    error_calib = np.sqrt((calib+sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2))
+    error_sky = np.sqrt((sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2)) 
     
     # Calculations the error in the curve equation
-    error_curve = sqrt(((error_source**2)*(calib-source)**2 + (error_sky**2)*(source-calib)**2 + (error_calib**2)*(source-sky)**2)/(calib-sky)**4)
+    error_curve = np.sqrt(((error_source**2)*(calib-source)**2 + (error_sky**2)*(source-calib)**2 + (error_calib**2)*(source-sky)**2)/(calib-sky)**4) 
+
+    error_norm  = error_curve/ave
     
-    return curve, error_curve
+    #return curve, error_curve
+    return norm, error_norm
     
 ############### Run function to produce 3 calibrated data sets ################
 
@@ -202,101 +205,114 @@ errorbar(frames, curve1, yerr=error1)
 plot(frames, curve1, 'r.', label='Calibrated wrt calib1')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve1.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve1.png')
 
 figure(6)
 errorbar(frames, curve2, yerr=error2)
 plot(frames, curve2, 'r.', label='Calibrated wrt calib2')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve2.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve2.png')
 
 figure(7)
 errorbar(frames, curve3, yerr=error3)
 plot(frames, curve3, 'r.', label='Calibrated wrt calib3')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve3.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve3.png')
 
 figure(8)
 errorbar(frames, curve4, yerr=error4)
 plot(frames, curve4, 'r.', label='Calibrated wrt calib4')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve4.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve4.png')
 
 figure(9)
 errorbar(frames, curve5, yerr=error5)
 plot(frames, curve5, 'r.', label='Calibrated wrt calib5')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve5.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve5.png')
 
 figure(10)
 errorbar(frames, curve6, yerr=error6)
 plot(frames, curve6, 'r.', label='Calibrated wrt calib6')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve6.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve6.png')
 
 figure(11)
 errorbar(frames, curve7, yerr=error7)
 plot(frames, curve7, 'r.', label='Calibrated wrt calib7')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve7.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve7.png')
 
 figure(12)
 errorbar(frames, curve8, yerr=error8)
 plot(frames, curve8, 'r.', label='Calibrated wrt calib8')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve8.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve8.png')
 
 figure(13)
 errorbar(frames, curve9, yerr=error9)
 plot(frames, curve9, 'r.', label='Calibrated wrt calib9')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve9.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve9.png')
 
 figure(14)
 errorbar(frames, curve10, yerr=error10)
 plot(frames, curve10, 'r.', label='Calibrated wrt calib10')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve10.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve10.png')
 
 figure(15)
 errorbar(frames, curve11, yerr=error11)
 plot(frames, curve11, 'r.', label='Calibrated wrt calib11')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve11.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve11.png')
 
 figure(16)
 errorbar(frames, curve12, yerr=error12)
 plot(frames, curve12, 'r.', label='Calibrated wrt calib12')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve5.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve12.png')
 
 figure(17)
 errorbar(frames, curve13, yerr=error13)
 plot(frames, curve13, 'r.', label='Calibrated wrt calib13')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-78b')
 legend(loc='best')
-savefig('curve13.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-78b/Photometry/curve13.png')

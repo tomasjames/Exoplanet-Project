@@ -17,7 +17,7 @@ from matplotlib.pyplot import *
 ############################### Read data #####################################
 
 # Read photometry data
-data = genfromtxt('results.txt', dtype = 'float64')
+data = genfromtxt('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Photometry/results.txt', dtype = 'float64')
 
 
 ##################### Extract quantities of interest ##########################
@@ -50,9 +50,9 @@ fname = []
 
 # Walks through all files in /Raw/ and appends file name to fname if it 
 # ends in .fits. Note: "../Raw/" steps up a directory to access /Raw/.
-for file in listdir("../Raw"):
+for file in listdir("/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw"):
     if file.endswith(".fits"):
-        fname.append('../Raw/' + file)
+        fname.append('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Raw/' + file)
 
 
 ########## Determine read noise and dark current from FITS headers ############
@@ -159,21 +159,24 @@ def lightcurve(source, calib, sky, pix, dark, rdnoise):
 
     # Takes the first and last 10 off-transit values and averages 
     # them for a baseline    
-    ave = average(curve[0:10])
+    ave = (np.average(curve[0:20]) + np.average(curve[-20:-1]))/2
     
     # Normalises the curve using the baseline calculated earlier    
     norm = curve/ave
 
     # Determines the SNR of both the source and calib stars using the equation
     # for SNR from Handbook of CCD Astronomy
-    error_source = sqrt((source+sky)+pix*(mean(dark)+mean(rdnoise)**2))
-    error_calib = sqrt((calib+sky)+pix*(mean(dark)+mean(rdnoise)**2))
-    error_sky = sqrt((sky)+pix*(mean(dark)+mean(rdnoise)**2)) 
+    error_source = np.sqrt((source+sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2))
+    error_calib = np.sqrt((calib+sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2))
+    error_sky = np.sqrt((sky)+pix*(np.mean(dark)+np.mean(rdnoise)**2)) 
     
     # Calculations the error in the curve equation
-    error_curve = sqrt(((error_source**2)*(calib-source)**2 + (error_sky**2)*(source-calib)**2 + (error_calib**2)*(source-sky)**2)/(calib-sky)**4)
+    error_curve = np.sqrt(((error_source**2)*(calib-source)**2 + (error_sky**2)*(source-calib)**2 + (error_calib**2)*(source-sky)**2)/(calib-sky)**4) 
+
+    error_norm  = error_curve/ave
     
-    return curve, error_curve
+    #return curve, error_curve
+    return norm, error_norm
     
 ############### Run function to produce 3 calibrated data sets ################
 
@@ -193,33 +196,38 @@ figure(6)
 errorbar(frames, curve1, fmt='', yerr=error1, label='Calibrated wrt calib1')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HATS-5b')
 legend(loc='best')
-savefig('curve1.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Photometry/curve1.png')
 
 figure(7)
 errorbar(frames, curve2, fmt='', yerr=error2, label='Calibrated wrt calib2')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HATS-5b')
 legend(loc='best')
-savefig('curve2.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Photometry/curve2.png')
 
 figure(8)
 errorbar(frames, curve3, fmt='', yerr=error3, label='Calibrated wrt calib3')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HATS-5b')
 legend(loc='best')
-savefig('curve3.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Photometry/curve3.png')
 
 figure(9)
 errorbar(frames, curve4, fmt='', yerr=error4, label='Calibrated wrt calib4')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HATS-5b')
 legend(loc='best')
-savefig('curve4.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Photometry/curve4.png')
 
 figure(10)
 errorbar(frames, curve5, fmt='', yerr=error5, label='Calibrated wrt calib5')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for HATS-5b')
 legend(loc='best')
-savefig('curve5.png')
+savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HATS-5b/Photometry/curve5.png')

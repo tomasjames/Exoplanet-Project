@@ -13,6 +13,7 @@ from os import *
 from numpy import *
 from matplotlib.pyplot import *
 from pyfits import *
+from sklearn.metrics import mean_squared_error
 
 # Import model
 from modelv2 import *
@@ -72,13 +73,13 @@ Rstar = 0.823*(6.955e8) # m
 Mplanet = 1.09*(1.9e27) # kg
 Rplanet = 1.164*(6.9e7) # m
 radius = 4 # 4 pixel radii planet
-end = 26000 # s
-mid = 20866 # s
-start = 16100 # s
-nobs = 181 # Number of observations
+end = 25800 # s
+mid = 20800 # s
+start = 15900 # s
+nobs = 185 # Number of observations
 a = 0.02343*(149.6e9) # m
 i = 86.0 # deg
-mu = 0.6
+mu = 0.515
 sangle = 1./40.
 
 '''
@@ -169,7 +170,7 @@ def lightcurve(source, calib, sky, pix, dark, rdnoise):
 
     # Takes the first and last 10 off-transit values and averages 
     # them for a baseline    
-    ave = average(curve[0:10])
+    ave = (np.average(curve[0:20]) + np.average(curve[-60:-1]))/2
     
     # Normalises the curve using the baseline calculated earlier    
     norm = curve/ave
@@ -200,6 +201,36 @@ curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 
 F, X, T, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i, sangle)
 
+####################### Determine radius of exoplanet ########################
+
+delta_F_1 = np.average(curve1[0:20]) - np.average(curve1[40:80])
+delta_F_2 = np.average(curve2[0:20]) - np.average(curve2[40:80])
+delta_F_3 = np.average(curve3[0:20]) - np.average(curve3[40:80])
+delta_F_4 = np.average(curve4[0:20]) - np.average(curve4[40:80])
+delta_F_5 = np.average(curve5[0:20]) - np.average(curve5[40:80])
+
+det_Rplanet_1 = np.sqrt((Rstar**2)*(delta_F_1))
+det_Rplanet_2 = np.sqrt((Rstar**2)*(delta_F_2))
+det_Rplanet_3 = np.sqrt((Rstar**2)*(delta_F_3))
+det_Rplanet_4 = np.sqrt((Rstar**2)*(delta_F_4))
+det_Rplanet_5 = np.sqrt((Rstar**2)*(delta_F_5))
+
+##################### Compute error in model to data fit #####################
+
+error_fit_1 = np.sqrt(mean_squared_error(curve1, F))
+error_fit_2 = np.sqrt(mean_squared_error(curve2, F))
+error_fit_3 = np.sqrt(mean_squared_error(curve3, F))
+error_fit_4 = np.sqrt(mean_squared_error(curve4, F))
+error_fit_5 = np.sqrt(mean_squared_error(curve5, F))
+
+##################### Compute error in calculated radius #####################
+
+Rplanet_1_error = np.sqrt((delta_F_1/curve1[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_1/curve1[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_1/curve1[0]**3)*(error1[0])**2)
+Rplanet_2_error = np.sqrt((delta_F_2/curve2[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_2/curve2[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_2/curve2[0]**3)*(error2[0])**2)
+Rplanet_3_error = np.sqrt((delta_F_3/curve3[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_3/curve3[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_3/curve3[0]**3)*(error3[0])**2)
+Rplanet_4_error = np.sqrt((delta_F_4/curve4[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_4/curve4[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_4/curve4[0]**3)*(error4[0])**2)
+Rplanet_5_error = np.sqrt((delta_F_5/curve5[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_5/curve5[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_5/curve5[0]**3)*(error5[0])**2)
+
 ################################## Plot data ##################################
 
 # Define array of frames to plot over
@@ -209,11 +240,13 @@ frames_model = linspace(1, 110, nobs)
 figure(1)
 #plot(frames, curve1, 'r.', label='Calibrated wrt calib1')
 errorbar(frames, curve1, yerr=error1, label='Calibrated wrt calib1')
-plot(frames_model, F)
+plot(frames_model, F, label='EPTM')
 #plot(frames, linspace(1,1,len(frames)))
-#ylim(1.6,1.7)
+ylim(0.955,1.03)
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for QATAR-1b')
+text(50, 0.96, 'Radius: ('+str(det_Rplanet_1).format(1.0e9)+str(' +/- ')+str(Rplanet_1_error).format(1.0e9)+str(') m'))
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve1.png')
 
@@ -226,6 +259,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve2.png')
 
@@ -238,6 +272,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve3.png')
 
@@ -250,6 +285,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve4.png')
 
@@ -262,7 +298,10 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve5.png')
 
 det_Rplanet_5 = np.sqrt(Rstar**2)*(1 - min(curve5))
+
+close('all')

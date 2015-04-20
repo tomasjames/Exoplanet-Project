@@ -14,6 +14,7 @@ import numpy as np
 from matplotlib.pyplot import *
 from pyfits import *
 from modelv2 import *
+from sklearn.metrics import mean_squared_error
 
 
 ############################### Read data #####################################
@@ -74,12 +75,13 @@ radius = 4. # 4 pixel radii planet
 end = 35200 # s
 mid = 26257 # s
 start = 17600 # s
-nobs = 240 # Number of observations
+#nobs = 240 # Number of observations
+nobs = 259
 a = 0.02293*149.6e9 # m
 i = 86.0 # deg
-mu = 0.49
+mu = 0.567
 app_mag = 11.69
-sangle = 1./65.
+sangle = 1./60.
 
 ########### Plot data to determine quality of calibration stars ###############
 '''
@@ -199,6 +201,36 @@ curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 
 F, X, T, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i, sangle)
 
+####################### Determine radius of exoplanet ########################
+
+delta_F_1 = np.average(curve1[0:20]) - np.average(curve1[60:150])
+delta_F_2 = np.average(curve2[0:20]) - np.average(curve2[60:150])
+delta_F_3 = np.average(curve3[0:20]) - np.average(curve3[60:150])
+delta_F_4 = np.average(curve4[0:20]) - np.average(curve4[60:150])
+delta_F_5 = np.average(curve5[0:20]) - np.average(curve5[60:150])
+
+det_Rplanet_1 = np.sqrt((Rstar**2)*(delta_F_1))
+det_Rplanet_2 = np.sqrt((Rstar**2)*(delta_F_2))
+det_Rplanet_3 = np.sqrt((Rstar**2)*(delta_F_3))
+det_Rplanet_4 = np.sqrt((Rstar**2)*(delta_F_4))
+det_Rplanet_5 = np.sqrt((Rstar**2)*(delta_F_5))
+
+##################### Compute error in model to data fit #####################
+
+error_fit_1 = np.sqrt(mean_squared_error(curve1, F))
+error_fit_2 = np.sqrt(mean_squared_error(curve2, F))
+error_fit_3 = np.sqrt(mean_squared_error(curve3, F))
+error_fit_4 = np.sqrt(mean_squared_error(curve4, F))
+error_fit_5 = np.sqrt(mean_squared_error(curve5, F))
+
+##################### Compute error in calculated radius #####################
+
+Rplanet_1_error = np.sqrt((delta_F_1/curve1[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_1/curve1[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_1/curve1[0]**3)*(error1[0])**2)
+Rplanet_2_error = np.sqrt((delta_F_2/curve2[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_2/curve2[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_2/curve2[0]**3)*(error2[0])**2)
+Rplanet_3_error = np.sqrt((delta_F_3/curve3[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_3/curve3[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_3/curve3[0]**3)*(error3[0])**2)
+Rplanet_4_error = np.sqrt((delta_F_4/curve4[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_4/curve4[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_4/curve4[0]**3)*(error4[0])**2)
+Rplanet_5_error = np.sqrt((delta_F_5/curve5[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_5/curve5[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_5/curve5[0]**3)*(error5[0])**2)
+
 ################################## Plot data ##################################
 
 # Define array of frames to plot over
@@ -209,13 +241,14 @@ figure(6)
 #plot(frames, curve1, 'r.', label='Calibrated wrt calib1')
 errorbar(frames, curve1, fmt='', yerr=error1, label='Calibrated wrt calib1')
 #plot(frames, linspace(1,1,len(frames)))
-plot(frames_model, F)
+plot(frames_model, F, label='ETPM')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-12b')
+text(50, 1.012, 'Radius: ('+str(det_Rplanet_1)+str(' +/- ')+str(Rplanet_1_error)+str(') m'))
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve1.png')
 
-det_Rplanet_1 = np.sqrt((Rstar**2)*(np.average(curve1[0:20]) - min(curve1)))
 
 figure(7)
 #plot(frames, curve2, 'r.', label='Calibrated wrt calib2')
@@ -224,6 +257,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-12b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve2.png')
 
@@ -236,6 +270,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-12b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve3.png')
 
@@ -248,6 +283,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-12b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve4.png')
 
@@ -260,6 +296,7 @@ plot(frames_model, F)
 #plot(frames, linspace(1,1,len(frames)))
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
+title('Transit Lightcurve for WASP-12b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/WASP-12b/Photometry/Graphs/curve5.png')
 
