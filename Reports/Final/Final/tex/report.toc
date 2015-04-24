@@ -10,11 +10,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Transiting}{2}{subsection.0.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Radial Velocity }{3}{figure.caption.2}
+\contentsline {subsubsection}{Radial Velocity }{3}{equation.0.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Direct Imaging }{4}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Microlensing }{4}{figure.caption.3}
+\contentsline {subsubsection}{Microlensing }{5}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Pulsar Timing}{5}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
@@ -34,8 +34,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {III}Aperture Photometry}{9}{subsection.0.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV}Modelling the Transit}{11}{subsection.0.3.4}
+\contentsline {subsection}{\numberline {IV}Modelling the Transit with the Exoplanet Pixelisation Transit Model}{11}{subsection.0.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {IV}Results}{11}{section.0.4}
+\contentsline {subsection}{\numberline {V}Error Analysis}{11}{subsection.0.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V}Future Work}{11}{section.0.5}
+\contentsline {section}{\numberline {IV}Results}{12}{section.0.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {I}Practice Data Set: QATAR-1b}{12}{subsection.0.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {II}}{13}{subsection.0.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {V}Conclusions}{13}{section.0.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {VI}Future Work}{13}{section.0.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {I}Appendix: EPTM Code}{15}{section.Alph0.1}

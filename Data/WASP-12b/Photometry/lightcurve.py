@@ -201,6 +201,8 @@ curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 
 F, X, T, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i, sangle)
 
+delta_R = (35527381.693)/2
+
 ####################### Determine radius of exoplanet ########################
 
 delta_F_1 = np.average(curve1[0:20]) - np.average(curve1[60:150])

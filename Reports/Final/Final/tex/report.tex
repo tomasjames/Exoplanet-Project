@@ -47,6 +47,9 @@
 \titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
 \titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
 
+\usepackage{listings} % Allow code to be input into appendix
+\usepackage{courier}
+
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
@@ -97,26 +100,32 @@ For this project, the transiting extrasolar planets WASP-22 b, WASP-78 b and HAT
 \section{Introduction}
 The discovery of the first extrasolar planet by \textcite{first} introduced a field into astronomical research that is now one of the most exciting and fast moving fields in modern astrophysics. Subsequent detections, such as the first main-sequence extrasolar planet by \textcite{MQ} continue to reveal a more diverse and rich spectrum of exoplanets. More than 20 years on from these detections, the \textcite{exo} records 1854 \footnote{As of Friday 12th December 2014} extrasolar planets that have been discovered using a variety of detection methods utilising both ground and satellite based telescopes in a multitude of collaborative missions. These vary from discovering new exoplanets to actively searching for Earth analogs that could, under the right circumstances, harbour life.
 
-One of the most prominent and substantial of these missions is NASA's Kepler mission. Launched on March 7th 2009, the primary objective of Kepler is to detect exoplanets of Earth size that reside in or close to the habitable zone of their parent stars. A key advantage of Kepler is that it orbits the Sun and so its observations are not constrained by Earth's atmosphere.  Shortly after launch, Kepler encountered mechanical failure that limited its ability to hunt for Earth sized planets. In 2014, the K2 mission - a modified form of Kepler's initial mission to take into account the mechanical failures - was greenlit such that Kepler now searches primarily for habitable planets orbiting red-dwarf Stars along with potential supernova events and star forming regions. In spite of this Kepler has still discovered over 1000 confirmed exoplanets and is synonymous with the hunt for extrasolar planets, having discovered a large portion of the current dataset [insert some more rigorous statistics].
-
 \subsection{Extrasolar Planets}
 Extrasolar planets - or exoplanets - are planetary objects orbiting stars outside of the Solar System. The Solar System itself is the subject of intense study, largely because of its relative ease to study. In comparison, exoplanetary detection is much harder, as Kepler estimates the closest Earth-like planet is still 9ly from Earth [reference].  Statistics place the number of potential planetary systems at 400 billion [reference], but relatively little is known as to their analogy to the Solar System. Is the Solar System a common planetary system or is it a much more peculiar system, one of chance and luck rather than mean statistics?  
 
 Since the detections made by \citeauthor{first} and \citeauthor{MQ} a multitude of dedicated projects have been launched with the primary aim of detecting and characterising exoplanets. These vary from ground-based telescopes such as WASP and HAT to spaced-based telescopes such as Kepler and CoRoT. Uniquely these missions observe a wide distribution of exoplanets, effectively allowing the formation and evolution of planetary systems to be studied. 
 
+One of the most prominent and substantial of these missions is NASA's Kepler mission. Launched on March 7th 2009, the primary objective of Kepler is to detect exoplanets of Earth size that reside in or close to the habitable zone of their parent stars. A key advantage of Kepler is that it orbits the Sun and so its observations are not constrained by Earth's atmosphere.  Shortly after launch, Kepler encountered mechanical failure that limited its ability to hunt for Earth sized planets. In 2014, the K2 mission - a modified form of Kepler's initial mission to take into account the mechanical failures - was greenlit such that Kepler now searches primarily for habitable planets orbiting red-dwarf Stars along with potential supernova events and star forming regions. In spite of this Kepler has still discovered over 1000 confirmed exoplanets and is synonymous with the hunt for extrasolar planets, having discovered a large portion of the current dataset [insert some more rigorous statistics].
+
 \subsection{Detection Methods}
 Extrasolar planet detection methods are divided into two classes: direct and indirect detections. A direct detection uses data that explicitly shows the presence of an extrasolar planet. An indirect detection uses effects that an extrasolar planet has on its parent star to infer the planet's existence. To date there are 5 well established detection methods. These are discussed below.  
 
 \subsubsection{Transiting}
-When an exoplanet passes across the line of sight between the observer and a star, a dip in the total luminosity of the system is observed owing to the exoplanet blocking a portion of the star's flux from the observer. By plotting the total flux received as a function of time the presence of an exoplanet can be inferred if a dip in the total flux received is observed. Furthermore the dip in the total flux allows the calculation of the size of the exoplanet, as the amount of flux blocked is proportional to the exoplanet radius \parencite{radius}. An example of this effect can be seen in Figure~\ref{Transit}.
+When an exoplanet passes across the line of sight between the observer and a star, a dip in the total luminosity of the system is observed owing to the exoplanet blocking a portion of the star's flux from the observer. By plotting the total flux received as a function of time the presence of an exoplanet can be inferred if a dip in the total flux received is observed. Furthermore the dip in the total flux allows the calculation of the size of the exoplanet, as the amount of flux blocked is proportional to the exoplanet radius as described by equation \ref{dip} \parencite{radius}. An example of this effect can be seen in Figure~\ref{Transit}.
 
 \begin{figure}[H]
 \centering
-    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim/Master/img/Saved/transit}
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/Saved/transit}
 \caption[An example showing how the presence of an exoplanet moving across a star results in a reduction in the observed flux, as evidenced by the visible trough.]{An example showing how the presence of an exoplanet moving across a star results in a reduction in the observed flux, as evidenced by the visible trough. \parencite{transitimg}}\label{Transit}
 \end{figure}
 
-This method has various limitations however. This method is biased towards finding exoplanets with large radii and small orbital periods as they block more of the star’s flux incident upon the observer more often. This allows more reliable estimates of parameters like exoplanetary radius to be determined. Another limitation is that exoplanets with orbital inclinations close to 90$^\circ$ cannot be detected as they do not pass in front of their host star relative to the observer.
+\begin{equation} \label{dip}
+    \frac{\Delta F}{F} = \frac{{R_{exo}}^{2}}{{R_{star}}^{2}}
+\end{equation}
+
+In equation \ref{dip} $\Delta F$ is the flux blocked due to the exoplanet, $F$ is the observed off transit flux, $R_{exo}$ is the radius of the exoplanet and $R_{star}$ is the radius of the star being transitted.
+
+This method has various limitations however. This method is biased towards finding exoplanets with large radii and small orbital periods as they block more of the star$’$s flux incident upon the observer more often. This allows more reliable estimates of parameters like exoplanetary radius to be determined. Another limitation is that exoplanets with orbital inclinations close to 90$^\circ$ cannot be detected as they do not pass in front of their host star relative to the observer.
 
 Moreover, any partially opaque object passing infront of a star will have the effect of blocking a portion of the star's total flux. \textcite{false} estimated that this is a rare occurence, with the false positive probability (FPP)\footnote{The FPP is the probability that the exoplanet detected is a false positive, or an astronomical object passing between the telescope and the star, therefore acting as an erroneous detection.} being estimated at $<10\%$ for almost 90\% of candidates being observed by the Kepler mission.
 
@@ -125,13 +134,13 @@ The existence of an exoplanetary companion orbiting a host star alters the syste
 
 \begin{figure}[H]
 \centering
-    \includegraphics[scale = 0.2]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim/Master/img/Saved/radialvelocity}
+    \includegraphics[scale = 0.2]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/Saved/radialvelocity}
 \caption[An example showing how the presence of a hidden exoplanet induces a change in the centre of mass of the planetary system, therefore altering the centre of orbit of each of the system's orbiting companions. This can be detected by the resulting Doppler shift of the host star's spectral lines.] {An example showing how the presence of a hidden exoplanet induces a change in the centre of mass of the planetary system, therefore altering the centre of orbit of each of the system's orbiting companions. This can be detected by the resulting Doppler shift of the host star's spectral lines. \parencite{rvdetect}}\label{rvdetect}
 \end{figure}
 
 This variation is detected by observing the Doppler shift of the star’s spectral lines. Whilst the star is moving towards the observer a decrease in the wavelength of the spectral lines is observed. When it is moving away from the observer an increase in the wavelength of the spectral lines is observed. No change is observed when the star is moving normal to the observer`s line of sight. 
 
-This detection method is heavily biased towards large exoplanets orbiting less massive stars with small orbital periods, owing to the larger perturbation observed in the host star’s orbit. However as \textcite{stats} state, the spectroscopic signature can only yield orbital parameters and a minimum mass as the orbital inclination remains unknown. 
+This detection method is heavily biased towards large exoplanets orbiting less massive stars with small orbital periods, owing to the larger perturbation observed in the host star’s orbit. However as \textcite{stats} state, the spectroscopic signature can only yield orbital parameters and a minimum mass as the orbital inclination remains unknown. An example of this bias is the inherent abundance of $'$hot-Jupiters$'$ in the current data. Hot Jupiters are exoplanets close to the mass of Jupiter that orbit their host star at very small semi-major axes. For example, \textcite{sweeps} surveyed multiple Jovian mass exoplanets in the SWEEPS field and found that the orbital periods varied from 0.541-2.965 days. These combinations produce a perturbation detectable using the radial-velocity method, accounting for the potentially over-sampled number of Jovian class exoplanets detected in surveys to date.
 
 A common source of error using the radial velocity method relates to the expansion and contraction of the star itself. This produces a very similar spectroscopic signature that would be expected to be observed were the star's orbit to be perturbed by an exoplanet.
 
@@ -156,6 +165,7 @@ This radio emission - owing to its stability and reliability - can be used to tr
 
 The reliability and accuracy of the pulsar timing method allows much smaller exoplanets to be detected. The first discovered exoplanet was found orbiting the pulsar PSR1257+12 by \citeauthor{first} in 1992. According to the \textcite{exo} however only 18 exoplanets have been detected using this method since 1992, indicating that exoplanets orbiting pulsars are rare occurences.
 
+
 %-----------------------------------------------------------------
 % Pre Data Collection Tests
 %-----------------------------------------------------------------
@@ -166,7 +176,7 @@ To better understand the orbital behaviour of exoplanets, along with their calcu
 \subsection*{Period and Semi-Major Axis}
 \begin{figure}[H]
 \centering
-    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim/Master/img/log_period_major}
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/log_period_major}
 \caption{A loglog plot showing the relationship between an exoplanet's period and its semi-major axis.}\label{log_period_major}
 \end{figure}
 
@@ -186,7 +196,7 @@ Furthermore Figure~\ref{log_period_major} shows that nearly all exoplanets detec
 
 \begin{figure}[H]
 \centering
-    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim/Master/img/log_radius_mass}
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/log_radius_mass}
 \caption{A loglog plot showing the relationship between an exoplanet's mass and its radius.}\label{log_radius_mass}
 \end{figure}
 
@@ -234,7 +244,7 @@ Each 1.0m telescope allows for the selection of 2 different sensors, along with 
 
 \end{itemize} 
 
-Whilst it would have been preferable to use one sensor across all observations and observatories, not all observatories in the Southern Hemisphere use the same sensor. Both Sutherland and Siding Spring operate using the SBIG sensor whilst Cerro Tololo uses the Sinistro sensor.   
+Whilst it would have been preferable to use one sensor across all observations and observatories, not all observatories in the Southern Hemisphere use the same sensor. Both Sutherland and Siding Spring operate using the SBIG sensor whilst Cerro Tololo uses the Sinistro sensor.    
 
 %-----------------------------------------------------------------
 % Exoplanets for Consideration
@@ -260,8 +270,8 @@ Once the number of visible sources was determined, the number of those sources t
     \label{planets}
 \end{table}
 
-
-
+The data from these observations was regrettably unusable. Whilst steps were taken to minimise the possibility of observation limiting effects, it was suspected that bad weather or atmospheric anomalies contributed in masking any transit the data may have captured. 
+ 
 %-----------------------------------------------------------------
 % Methodology
 %-----------------------------------------------------------------
@@ -301,7 +311,7 @@ To perform aperture photometry using GAIA, the data (in the form a .FITS file) w
 
 \begin{figure}[H]
 \centering
-    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim/Master/img/aperture_qatar1b.png}
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/aperture_qatar1b.png}
 \caption[An example of how the optimum aperture size was determined by observing how the background subtracted signal varies with aperture size. The point at which the gradient of the curve becomes constant - in this instance at the 12 pixel point - is the optimum aperture size.]{An example of how the optimum aperture size was determined by observing how the background subtracted signal varies with aperture size. The point at which the gradient of the curve becomes constant - in this instance at the 12 pixel point - is the optimum aperture size.} \label{qatar1b}
 \end{figure}
 
@@ -317,17 +327,85 @@ For a transit to be reliably characterised differential aperture photometry is p
 
 In equation \ref{diffphotom}, $S$ is the calibrated flux, $F_{i}$ is the incident flux as defined earlier, $F_{c}$ is the calibration star flux and $F_{b}$ is the background flux.
 
-This essentially calibrates the flux from the object of interest against another object of similar brightness in the field of view. Providing that the calibration star has constant luminosity (and therefore constant flux) this normalises the count in order to account for any atmospheric effects between frames. For reliability this is performed with as many different calibration stars as the field of view allows.
+This essentially calibrates the flux from the object of interest against another object of similar brightness in the field of view. Providing that the calibration star has constant luminosity (and therefore constant flux) this normalises the count in order to account for any atmospheric effects between frames. In order to determine whether a calibration star has any variability the flux ratio was calculated using $F_{ratio} = \frac{F_{1} - F_{b}}{F_{2}-F_{b}}$ where $F_{1}$ and $F_{2}$ are the incident fluxes from 2 calibration stars. This was then plotted as a function of time. A nonvariable star will show random Poisson fluctuations in the count owing to photons obeying Poisson statistics, but these fluctuations should be around a constant mean value. If there is any deviation from this (i.e. $F_{ratio}$ is not constant) then the variable star is discounted as a calibration star. For reliability this is performed with as many different calibration stars as the field of view allows. This project focused on obtaining at least 5 lightcurves using 5 different calibration stars. 
 
-This procedure is repeated across an even number of exposures, evenly distributed across the transit and, importantly, about its transit centre. A Python script was then written to plot $S$ as a function of time, thereby producing a light curve.
+This procedure is repeated across an even number of exposures, evenly distributed across the transit and, importantly, about its transit centre. A Python script was then written to plot $S$ as a function of time, thereby producing lightcurves for each calibration star.
 
-\subsection{Modelling the Transit}
+\subsection{Modelling the Transit with the Exoplanet Pixelisation Transit Model}
+The Exoplanet Pixelisation Transit Model is a theoretical model developed by \textcite{model} to fit an optimised, model lightcurve to an observed lightcurve. This splits an exoplanet into a 2D grid of pixels and determines the distance between each pixel to the centre of the star in a given time step ($d_{pix}$). If this distance is less than or equal to the stellar radius ($R_{star}$) then the pixel considered lies infront of the star relative to the observer$'$s line of sight. This distance can be calculated using equation \ref{dpix}.
+
+\begin{equation} \label{dpix}
+    d_{pix} = \sqrt{(X_{pos} + x_{pix})^2 + (Y_{pos} + y_{pix})^2}
+\end{equation}
+
+Essentially this remains a classical Pythagorean triangle problem, repeated for each pixel in the exoplanet. $X_{pos}$ represents the distance from the centre of the transit to the exoplanet perpendicular to the line of sight (the centre of the star was assumed to be the centre of the transit). $x_{pix}$ is the distance from the centre of the exoplanet to the pixel considered in the x-plane. These definitions hold similarly for both $Y_{pos}$ and $y_{pix}$ only in the y-plane.
+
+Integrating over the observation period allows the exoplanet to move across the body of the star. Equation \ref{blocked} is then used to determined the amount of flux blocked by the exoplanet ($F_{b}$). 
+
+\begin{equation} \label{blocked}
+    F_{b} = \Delta \Omega_{pix} \sum_{pixels} I_{0}\Bigg[1-\mu\Bigg(1-\sqrt{1-\left(\frac{d_{pix}}{R_{star}}\right)^{2}}\Bigg)\Bigg]
+\end{equation}
+
+$\mu$ is the limb darkening coefficient for the star considered, $I_{0}$ is the central band intensity of the star and $\Delta\Omega_{pix}$ is the solid angle per pixel. This is then summed over each pixel lying within $R_{star}$ in order to account for all pixel blocking contributions. Crucially equation \ref{blocked} uses $\mu$ to account for the non-uniform flux across the body of the star. For example the star$'$s limb is less bright than the star$'$s body, as the optical depth increases towards the centre of the star. As a result the flux blocked in the limb will be inherently less than the flux blocked in the body of the star even if the number of pixels lying infront of each is the same. The effective temperature of the host star for each system was known, which allowed the value of $\mu$ to be found using the tables in \textcite{vanhamme}.
+
+The solid angle term, $\Delta \Omega_{pix}$, was used as a tuneable parameter to adjust the depth of the modelled transit. The exact value was not calculated; rather, varying values were used in order to select (by eye) which gave the dip closest to that of the observed transit.
+
+$F_{b}$ is a measure of the amount of flux blocked by the exoplanet. In order to determine the total flux received by the observer, $F_{b}$ was subtracted from a value of the off-transit flux. The observed lightcurves have normalised off-transit fluxes, so the total flux recieved over the observation period is just $F_{tot} = 1 - F_{b}$ for each source. 
+
+\subsection{Error Analysis}
+The signal-to-noise ratio for a given detector observing a source with signal $N^{*}$ using a number of pixels $n_{pix}$ is given in \textcite{howell} and found in Appendix II. The adapted form (equation \ref{ccd}) was used in this project to calculate the total noise from all contributions in a frame.
+
+\begin{equation} \label{ccd}
+    N_{source} = \sqrt{(N^{*}+N_{S})+n_{pix}(N_{D}+(N_{R})^2)}
+\end{equation}
+
+\citeauthor{howell} defines the variables as follows: $N_{S}$ is the number of photons per pixel from the background. Similarly $N_{D}$ and $N_{R}$ are the total number of dark current electrons per pixel and the total number of dark current electrons per pixel respectively. 
+
+The LCOGT telescope network writes values of dark current and read noise from its CCDs to the .FITS headers produced by them. It also writes the dimensions in both x and y planes of its CCD array, allowing the straightforward calculation of $n_{pix}$. Furthermore when analysing the data using photometry, the $(N^{*}+N_{S})$ term is the signal from within the aperture. These values were used to calculate $N_{source}$ for each frame, repeating for any calibration stars considered. 
+
+The errors for the transiting system, a calibration star and the background could then be combined to determine the error on equation \ref{diffphotom}. Partially differentiating equation \ref{diffphotom} with respect to all variables and using the quadrature sum nature of error propogation yielded equation \ref{errors}.
+
+\begin{equation} \label{errors}
+    {\Delta S} = \sqrt{\frac{({\Delta N_{source}}^{2})(N_{calib}-N_{source})^{2} + ({\Delta N_{S}}^{2})(N_{source}-N_{calib})^2 + ({\Delta N_{calib}}^{2})(N_{source}-N_{S})^2}{(N_{calib}-N_{S})^4}}
+\end{equation}
+
+$\Delta N_{source}$, $\Delta N_{S}$ and $\Delta N_{calib}$ are the errors on the source signal, background signal and calibration star signal respectively as calculated using the methods discussed earlier. $N_{source}$, $N_{S}$ and $N_{calib}$ are the signals from the source star, the background and the calibration star respectively. The resulting values of $\Delta S$ were then plotted as error bars in the y-plane on plots of $S$ as a function of time.
+
+To determine the error for the calculated radius, equation \ref{dip} was treated in the same way as seen in equation \ref{Rerror}.
+
+\begin{equation} \label{Rerror}
+    \Delta R_{exo-obs} = \sqrt{\Big(\frac{\Delta F}{F}\Big)(\Delta (\Delta F))^2 + \Big(\frac{{R_{star}}^2}{4}\Big)\Big(\frac{F}{\Delta F}\Big)(\Delta {R_{star}})^2 + \Big(\frac{{R_{star}}^2}{4}\Big)\Big(\frac{\Delta F}{F^3}\Big)(\Delta (F))^2}
+\end{equation}
+
+The error estimate on the fractional flux blocked, $\Delta(\Delta F)$, was estimated by performing a root mean square analysis on the observed data with respect to the model EPTM curve. 
+
+The error on the radius as determined by the EPTM model, $\Delta R_{exo-EPTM}$ was taken to be the difference between the curve fit intersecting both the highest and lowest error bar points in the dip. A more rigorous statistical analysis would be performed given more time. 
 
 %-----------------------------------------------------------------
 % Results
 %-----------------------------------------------------------------
 
 \section{Results}
+
+\subsection{Practice Data Set: QATAR-1b}
+After analysing the QATAR-1b dataset using the photometry process defined earlier, figure \ref{qatar} is the resulting lightcurve. The EPTM model transit is also overlying the observed data. 
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/qatar1b.png}
+\caption[The resulting lightcurve after analysing the QATAR-1b data using aperture photometry. Overlayed is the theoretical modelled transit using the EPTM code in Appendix I.]{The resulting lightcurve after analysing the QATAR-1b data using aperture photometry. Overlayed is the theoretical modelled transit using the EPTM code in Appendix I.} \label{qatar}
+\end{figure}
+
+
+
+\subsection{}
+
+
+%-----------------------------------------------------------------
+% Conclusions
+%-----------------------------------------------------------------
+
+\section{Conclusions}
 
 %-----------------------------------------------------------------
 % Future Work
@@ -341,5 +419,17 @@ This procedure is repeated across an even number of exposures, evenly distribute
 
 \nocite{*}
 \printbibliography
+
+%-----------------------------------------------------------------
+% Appendix
+%-----------------------------------------------------------------
+
+\appendix
+\newpage
+\section{Appendix: EPTM Code}
+
+\lstinputlisting[language=Python, basicstyle=\small\ttfamily, showspaces=false, showstringspaces=false, showtabs=false]
+{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/Photometry/modelv2.py}
+
 
 \end{document}

@@ -44,6 +44,33 @@
       \field{year}{2010}
       \field{pages}{45\bibrangedash 51}
     \endentry
+    \entry{radius}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=7f2026196afb7c9cf003117477a9be2b}{{Charbonneau}}{C\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=071b4fada0656fa3474b72f047997305}{{Brown}}{B\bibinitperiod}{T.\bibnamedelimi M.}{T\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5bdd77bff46bcbead57ffd03a9848ad5}{{Burrows}}{B\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2b99fa5049ae4280e558341a0da9b22f}{{Laughlin}}{L\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=7f2026196afb7c9cf003117477a9be2b}{{Charbonneau}}{C\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=071b4fada0656fa3474b72f047997305}{{Brown}}{B\bibinitperiod}{T.\bibnamedelimi M.}{T\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5bdd77bff46bcbead57ffd03a9848ad5}{{Burrows}}{B\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2b99fa5049ae4280e558341a0da9b22f}{{Laughlin}}{L\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dbcf0922ad0afaa252d4e36cd1a8cb1c}
+      \strng{fullhash}{11ff118c4f8f356442256371ca0750fe}
+      \field{sortinit}{C}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labeltitle}{{When Extrasolar Planets Transit Their Parent Stars}}
+      \field{journaltitle}{Protostars and Planets V}
+      \field{title}{{When Extrasolar Planets Transit Their Parent Stars}}
+      \field{year}{2007}
+      \field{pages}{701\bibrangedash 716}
+      \verb{eprint}
+      \verb astro-ph/0603376
+      \endverb
+    \endentry
     \entry{starlink}{online}{}
       \name{labelname}{4}{}{%
         {{uniquename=0,hash=8f2054fd62b23da1673cfc82454d8d19}{Draper}{D\bibinitperiod}{Peter\bibnamedelima W.}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
@@ -90,6 +117,27 @@
       \verb http://www.exoplanet.eu
       \endverb
       \warn{\item Datamodel: Entry 'exo' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{howell}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ddd255722fdc5a7b84ecfa36e7b629cb}{Howell}{H\bibinitperiod}{Steve\bibnamedelima B.}{S\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ddd255722fdc5a7b84ecfa36e7b629cb}{Howell}{H\bibinitperiod}{Steve\bibnamedelima B.}{S\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ddd255722fdc5a7b84ecfa36e7b629cb}
+      \strng{fullhash}{ddd255722fdc5a7b84ecfa36e7b629cb}
+      \field{sortinit}{H}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Handbook of CCD Astronomy}
+      \field{edition}{2}
+      \field{title}{Handbook of CCD Astronomy}
+      \field{year}{2006}
+      \warn{\item Name "Richard Ellis, John Huchra, Steve Kahn, George Rieke, Peter B. Stetson" has too many commas: skipping name}
     \endentry
     \entry{orac-dr}{online}{}
       \name{labelname}{5}{}{%
@@ -258,6 +306,58 @@
       \endverb
       \warn{\item Datamodel: Entry 'etd' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring}
     \endentry
+    \entry{sweeps}{article}{}
+      \name{labelname}{16}{}{%
+        {{uniquename=0,hash=5c96dba858d4e9cdd0cecd3927f58b18}{Sahu}{S\bibinitperiod}{Kailash\bibnamedelima C.}{K\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=488598ce4a51d0f4672e3b808323c520}{Casertano}{C\bibinitperiod}{Stefano}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7d2e11a16068e79cd4e1bf68d3e2c5b0}{Bond}{B\bibinitperiod}{Howard\bibnamedelima E.}{H\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e4fd9a00b601ce10591e92b6ce87fe37}{Valenti}{V\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ad14e8b125ac370ae8e1e32187779e86}{Ed\bibnamedelima Smith}{E\bibinitperiod\bibinitdelim S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=17a53b4c6c4f365bcdbac9e1021ab5c8}{Minniti}{M\bibinitperiod}{Dante}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=edc3ff2d739baf76a0f5f30af191527d}{Zoccali}{Z\bibinitperiod}{Manuela}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0bef1e5af6e7f69bc8f406556ee5354b}{Livio}{L\bibinitperiod}{Mario}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b4fb5de2bd4f27ba5cd526d01e0fe84b}{Panagia}{P\bibinitperiod}{Nino}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=769bd1d96364f1bc47584c63b609177b}{Piskunov}{P\bibinitperiod}{Nikolai}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbc2be7fe91fb7a9ba583e88fd9a348c}{Brown}{B\bibinitperiod}{Thomas\bibnamedelima M.}{T\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7c02918c23eef839b0f6604875a84929}{Brown}{B\bibinitperiod}{Timothy}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2a53fc752a92ff9805edc0f107add8b6}{Renzini}{R\bibinitperiod}{Alvio}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bdaf227443f0b48bba41e1bba16eccd1}{Rich}{R\bibinitperiod}{R.\bibnamedelimi Michael}{R\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=592bea45aa55d7d90edfd8dc97c4fe25}{Clarkson}{C\bibinitperiod}{Will}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=171f0ce5aace51087e77532b540f0d1b}{Lubow}{L\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{16}{}{%
+        {{uniquename=0,hash=5c96dba858d4e9cdd0cecd3927f58b18}{Sahu}{S\bibinitperiod}{Kailash\bibnamedelima C.}{K\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=488598ce4a51d0f4672e3b808323c520}{Casertano}{C\bibinitperiod}{Stefano}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7d2e11a16068e79cd4e1bf68d3e2c5b0}{Bond}{B\bibinitperiod}{Howard\bibnamedelima E.}{H\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e4fd9a00b601ce10591e92b6ce87fe37}{Valenti}{V\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ad14e8b125ac370ae8e1e32187779e86}{Ed\bibnamedelima Smith}{E\bibinitperiod\bibinitdelim S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=17a53b4c6c4f365bcdbac9e1021ab5c8}{Minniti}{M\bibinitperiod}{Dante}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=edc3ff2d739baf76a0f5f30af191527d}{Zoccali}{Z\bibinitperiod}{Manuela}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0bef1e5af6e7f69bc8f406556ee5354b}{Livio}{L\bibinitperiod}{Mario}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b4fb5de2bd4f27ba5cd526d01e0fe84b}{Panagia}{P\bibinitperiod}{Nino}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=769bd1d96364f1bc47584c63b609177b}{Piskunov}{P\bibinitperiod}{Nikolai}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbc2be7fe91fb7a9ba583e88fd9a348c}{Brown}{B\bibinitperiod}{Thomas\bibnamedelima M.}{T\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7c02918c23eef839b0f6604875a84929}{Brown}{B\bibinitperiod}{Timothy}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2a53fc752a92ff9805edc0f107add8b6}{Renzini}{R\bibinitperiod}{Alvio}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bdaf227443f0b48bba41e1bba16eccd1}{Rich}{R\bibinitperiod}{R.\bibnamedelimi Michael}{R\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=592bea45aa55d7d90edfd8dc97c4fe25}{Clarkson}{C\bibinitperiod}{Will}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=171f0ce5aace51087e77532b540f0d1b}{Lubow}{L\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b550be44aeee9be0b474b1ac71424dcf}
+      \strng{fullhash}{5290ee5d87aaade7f975b372c94ee612}
+      \field{sortinit}{S}
+      \field{labelyear}{2006}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Transiting extrasolar planetary candidates in the Galactic bulge}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{number}{7111}
+      \field{title}{Transiting extrasolar planetary candidates in the Galactic bulge}
+      \field{volume}{443}
+      \field{year}{2006}
+      \field{pages}{534\bibrangedash 540}
+    \endentry
     \entry{keplererror}{article}{}
       \name{labelname}{6}{}{%
         {{uniquename=0,hash=4bfee121dd5a764182be1d17e4326e7f}{{Santerne}}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
@@ -357,6 +457,28 @@
       \field{volume}{45}
       \field{year}{2007}
       \field{pages}{397\bibrangedash 493}
+    \endentry
+    \entry{vanhamme}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ef09786bf63f6ffcc544ffb33322a84f}{{Van\bibnamedelimb Hamme}}{V\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ef09786bf63f6ffcc544ffb33322a84f}{{Van\bibnamedelimb Hamme}}{V\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ef09786bf63f6ffcc544ffb33322a84f}
+      \strng{fullhash}{ef09786bf63f6ffcc544ffb33322a84f}
+      \field{sortinit}{V}
+      \field{labelyear}{1993}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labeltitle}{New Limb Darkening Coefficients for Modeling Binary Star Light Curves}
+      \field{journaltitle}{The Astronomical Journal}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{New Limb Darkening Coefficients for Modeling Binary Star Light Curves}
+      \field{volume}{106}
+      \field{year}{1993}
+      \field{pages}{2096\bibrangedash 2117}
     \endentry
     \entry{first}{article}{}
       \name{labelname}{2}{}{%

@@ -9,6 +9,11 @@
 \BOOKMARK [2][-]{subsection.0.3.1}{Data Collection}{section.0.3}% 9
 \BOOKMARK [2][-]{subsection.0.3.2}{Data Analysis}{section.0.3}% 10
 \BOOKMARK [2][-]{subsection.0.3.3}{Aperture Photometry}{section.0.3}% 11
-\BOOKMARK [2][-]{subsection.0.3.4}{Modelling the Transit}{section.0.3}% 12
-\BOOKMARK [1][-]{section.0.4}{Results}{}% 13
-\BOOKMARK [1][-]{section.0.5}{Future Work}{}% 14
+\BOOKMARK [2][-]{subsection.0.3.4}{Modelling the Transit with the Exoplanet Pixelisation Transit Model}{section.0.3}% 12
+\BOOKMARK [2][-]{subsection.0.3.5}{Error Analysis}{section.0.3}% 13
+\BOOKMARK [1][-]{section.0.4}{Results}{}% 14
+\BOOKMARK [2][-]{subsection.0.4.1}{Practice Data Set: QATAR-1b}{section.0.4}% 15
+\BOOKMARK [2][-]{subsection.0.4.2}{}{section.0.4}% 16
+\BOOKMARK [1][-]{section.0.5}{Conclusions}{}% 17
+\BOOKMARK [1][-]{section.0.6}{Future Work}{}% 18
+\BOOKMARK [1][-]{section.Alph0.1}{Appendix: EPTM Code}{}% 19

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.22)  17 APR 2015 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.22)  24 APR 2015 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,6 +525,34 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 (/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2011/12/15
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count279
+\lst@gtempboxa=\box31
+\lst@token=\toks21
+\lst@length=\count280
+\lst@currlwidth=\dimen155
+\lst@column=\count281
+\lst@pos=\count282
+\lst@lostspace=\dimen156
+\lst@width=\dimen157
+\lst@newlines=\count283
+\lst@lineno=\count284
+\lst@maxwidth=\dimen158
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count285
+\lst@skipnumbers=\count286
+\lst@framebox=\box32
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip64
 \f@ncyO@elh=\skip65
@@ -538,7 +566,7 @@ File: block.tss 2011/12/15
 )
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 54.
+less on input line 57.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -552,31 +580,31 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'firstinits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 72.
+(biblatex)                Setting 'uniquename=init' on input line 75.
 
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 75.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-\big@size=\dimen155
+\big@size=\dimen159
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -615,20 +643,21 @@ File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 72.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 75.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count279
+\c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./report.out) (./report.out)
 \@outlinefile=\write4
@@ -637,17 +666,17 @@ LaTeX Info: Redefining \nameref on input line 72.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count280
-\scratchdimen=\dimen156
-\scratchbox=\box32
-\nofMPsegments=\count281
-\nofMParguments=\count282
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count283
-\MPscratchDim=\dimen157
-\MPnumerator=\count284
-\makeMPintoPDFobject=\count285
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count288
+\scratchdimen=\dimen160
+\scratchbox=\box34
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen161
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -679,6 +708,12 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Datamodel: Entry 'exo' (/Users/tomasjames/Documents
 /University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid 
 format 'n.d.' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'howell':
+(biblatex)                - Name "Richard Ellis, John Huchra, Steve Kahn, Georg
+e Rieke, Peter B. Stetson" has too many commas: skipping name.
 
 
 Package biblatex Warning: Biber reported the following issues
@@ -723,28 +758,29 @@ ents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Inva
 lid format '10 September 2013' of date field 'urldate' - ignoring.
 
 )
-Package biblatex Info: Reference section=0 on input line 72.
-Package biblatex Info: Reference segment=0 on input line 72.
+Package biblatex Info: Reference section=0 on input line 75.
+Package biblatex Info: Reference segment=0 on input line 75.
+\c@lstlisting=\count294
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <24> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 75.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 75.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 78.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 78.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 78.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 78.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 78.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -753,15 +789,15 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 85.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \end{abstract}
+l.87 \end{abstract}
                     [1]
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 93.
  (./report.toc)
 \tf@toc=\write5
 \openout5 = `report.toc'.
@@ -770,7 +806,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 
+l.95 
       [1
 
 ]
@@ -781,22 +817,18 @@ Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ¨ in font pplr9t!
 
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/Saved/transit.png, id=124, 451.6875pt x 307.90031pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/Saved/transit.png Graphic file (type png)
 
-LaTeX Warning: Citation 'radius' on page 2 undefined on input line 111.
-
-
-</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/Saved/transit.png, id=97, 451.6875pt x 307.90031pt>
-File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
-terim/Master/img/Saved/transit.png Graphic file (type png)
-
-<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/Saved/transit.png>
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/Saved/transit.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/Saved/transit.png used on input line 115.
+/Project/Reports/Final/Final/img/Saved/transit.png used on input line 118.
 (pdftex.def)             Requested size: 225.84319pt x 153.94977pt.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 116.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 119.
  [2]
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
@@ -805,19 +837,19 @@ Missing character: There is no â in font pplb9t!
 Missing character: There is no € in font pplb9t!
 Missing character: There is no ¨ in font pplb9t!
 
-</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/Saved/radialvelocity.jpg, id=112, 928.46875pt x 935.495pt>
-File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
-terim/Master/img/Saved/radialvelocity.jpg Graphic file (type jpg)
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/Saved/radialvelocity.jpg, id=142, 928.46875pt x 935.495pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/Saved/radialvelocity.jpg Graphic file (type jpg)
 
-<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/Saved/radialvelocity.jpg>
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/Saved/radialvelocity.jpg>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/Saved/radialvelocity.jpg used on input line
- 128.
+/Project/Reports/Final/Final/img/Saved/radialvelocity.jpg used on input line 13
+7.
 (pdftex.def)             Requested size: 185.69046pt x 187.09567pt.
- [3 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/Saved/transit.png>]
+ [3 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/Saved/transit.png>]
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ™ in font pplr9t!
@@ -841,117 +873,154 @@ Missing character: There is no € in font pplb9t!
 Missing character: There is no ¨ in font pplb9t!
 
 
-LaTeX Warning: Citation 'einstein' on page 4 undefined on input line 146.
+LaTeX Warning: Citation 'einstein' on page 4 undefined on input line 155.
 
 
-LaTeX Warning: Citation 'micro' on page 4 undefined on input line 146.
+LaTeX Warning: Citation 'micro' on page 4 undefined on input line 155.
 
-[4 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
-rim/Master/img/Saved/radialvelocity.jpg>]
-</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/log_period_major.png, id=136, 578.16pt x 433.62pt>
-File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
-terim/Master/img/log_period_major.png Graphic file (type png)
+[4 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fina
+l/Final/img/Saved/radialvelocity.jpg>]
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/log_period_major.png, id=170, 578.16pt x 433.62pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/log_period_major.png Graphic file (type png)
 
-<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/log_period_major.png>
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/log_period_major.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/log_period_major.png used on input line 169
-.
+/Project/Reports/Final/Final/img/log_period_major.png used on input line 179.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [5]
-LaTeX Font Info:    Try loading font information for OML+pplx on input line 183
+LaTeX Font Info:    Try loading font information for OML+pplx on input line 193
 .
-LaTeX Font Info:    No file OMLpplx.fd. on input line 183.
+LaTeX Font Info:    No file OMLpplx.fd. on input line 193.
 
 
 LaTeX Font Warning: Font shape `OML/pplx/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 183.
+(Font)              for symbol `textless' on input line 193.
 
-[6 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Inte
-rim/Master/img/log_period_major.png>]
-</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/log_radius_mass.png, id=160, 578.16pt x 433.62pt>
-File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
-terim/Master/img/log_radius_mass.png Graphic file (type png)
+[6 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fina
+l/Final/img/log_period_major.png>]
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/log_radius_mass.png, id=193, 578.16pt x 433.62pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/log_radius_mass.png Graphic file (type png)
 
-<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/log_radius_mass.png>
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/log_radius_mass.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/log_radius_mass.png used on input line 189.
-
+/Project/Reports/Final/Final/img/log_radius_mass.png used on input line 199.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [7 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/log_radius_mass.png>]
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 232
+ [7 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/log_radius_mass.png>]
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 242
 .
-LaTeX Font Info:    No file OMSpplx.fd. on input line 232.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 242.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 232.
+(Font)              for symbol `textbullet' on input line 242.
 
 [8]
-</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Interim
-/Master/img/aperture_qatar1b.png, id=208, 578.16pt x 433.62pt>
-File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/In
-terim/Master/img/aperture_qatar1b.png Graphic file (type png)
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/aperture_qatar1b.png, id=241, 578.16pt x 433.62pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/aperture_qatar1b.png Graphic file (type png)
 
-<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Int
-erim/Master/img/aperture_qatar1b.png>
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/aperture_qatar1b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Interim/Master/img/aperture_qatar1b.png used on input line 304
-.
+/Project/Reports/Final/Final/img/aperture_qatar1b.png used on input line 314.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [9] [10 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Report
-s/Interim/Master/img/aperture_qatar1b.png>] [11]
+s/Final/Final/img/aperture_qatar1b.png>]
+[11]
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/qatar1b.png, id=285, 578.16pt x 433.62pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/qatar1b.png Graphic file (type png)
+
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/qatar1b.png>
+Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
+/Project/Reports/Final/Final/img/qatar1b.png used on input line 395.
+(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+ [12] [13 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Repor
+ts/Final/Final/img/qatar1b.png>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 421.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
 
 
 Package biblatex Warning: No driver for entry type 'image'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
+
+
+Overfull \hbox (31.7223pt too wide) in paragraph at lines 422--422
+[][]\OT1/pplx/m/n/10 NASA Ex-o-planet Archive (2010). \OT1/pplx/m/it/10 Tran-si
+t Ex-am-ple Im-age\OT1/pplx/m/n/10 . \OT1/pplx/m/sc/10 url\OT1/pplx/m/n/10 : []
+$\OT1/pcr/m/n/10 http : / / exoplanetarchive . ipac . caltech . edu / applicati
+ons /
+ []
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
 
 
 Package biblatex Warning: No driver for entry type 'image'.
-(biblatex)                Using fallback driver on input line 343.
+(biblatex)                Using fallback driver on input line 421.
 
 
-Overfull \hbox (43.9229pt too wide) in paragraph at lines 344--344
+Overfull \hbox (43.9229pt too wide) in paragraph at lines 422--422
 [][]\OT1/pplx/m/n/10 Wolszszan A. and Frail D. A. (1992). \  A plan-e-tary sys-
 tem around the mil-lisec-ond pul-sar PSR1257 + 12". \OT1/pplx/m/it/10 Na-ture \
 OT1/pplx/m/n/10 355.doi:10.1038/355145a0,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
-[12
+[14
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
+] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 432.
+
+(/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/P
+hotometry/modelv2.py
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 25.
+ [15] [16] [17])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 4930C658B9AB8600F3D4DB88F8022C68;909.
+(rerunfilecheck)             Checksum: E9A6339EA5C40C66241FB1A9ABFF59DA;1268.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -967,31 +1036,34 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
  ) 
 Here is how much of TeX's memory you used:
- 13675 strings out of 493117
- 222033 string characters out of 6135432
- 656075 words of memory out of 5000000
- 16875 multiletter control sequences out of 15000+600000
- 42105 words of font info for 104 fonts, out of 8000000 for 9000
+ 15413 strings out of 493117
+ 247295 string characters out of 6135432
+ 713544 words of memory out of 5000000
+ 18357 multiletter control sequences out of 15000+600000
+ 46073 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,78p,1450b,1476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,78p,1450b,1921s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on report.pdf (14 pages, 356893 bytes).
+/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/courier/ucrro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palati
+no/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr
+8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
+>
+Output written on report.pdf (20 pages, 469716 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 276 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -201,6 +201,9 @@ curve5, error5 = lightcurve(source, calib5, sky, pix, dark, rdnoise)
 
 F, X, T, R = model(start, mid, end, nobs, Mstar, Rstar, Mplanet, Rplanet, radius, a, mu, i, sangle)
 
+# Determine errors on model 
+delta_R = (15783877.6462)/2
+
 ####################### Determine radius of exoplanet ########################
 
 delta_F_1 = np.average(curve1[0:20]) - np.average(curve1[40:80])
@@ -250,7 +253,7 @@ text(50, 0.96, 'Radius: ('+str(det_Rplanet_1).format(1.0e9)+str(' +/- ')+str(Rpl
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve1.png')
 
-det_Rplanet_1 = np.sqrt((Rstar**2)*(average(curve1[0:10]) - min(curve1)))
+#det_Rplanet_1 = np.sqrt((Rstar**2)*(average(curve1[0:10]) - min(curve1)))
 
 figure(2)
 #plot(frames, curve2, 'r.', label='Calibrated wrt calib2')
@@ -263,7 +266,7 @@ title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve2.png')
 
-det_Rplanet_2 = np.sqrt(Rstar**2)*(1 - min(curve2))
+#det_Rplanet_2 = np.sqrt(Rstar**2)*(1 - min(curve2))
 
 figure(3)
 plot(frames, curve3, 'r.', label='Calibrated wrt calib3')
@@ -276,7 +279,7 @@ title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve3.png')
 
-det_Rplanet_3 = np.sqrt(Rstar**2)*(1 - min(curve3))
+#det_Rplanet_3 = np.sqrt(Rstar**2)*(1 - min(curve3))
 
 figure(4)
 plot(frames, curve4, 'r.', label='Calibrated wrt calib3')
@@ -289,7 +292,7 @@ title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve4.png')
 
-det_Rplanet_4 = np.sqrt(Rstar**2)*(1 - min(curve4))
+#det_Rplanet_4 = np.sqrt(Rstar**2)*(1 - min(curve4))
 
 figure(5)
 plot(frames, curve5, 'r.', label='Calibrated wrt calib3')
@@ -302,6 +305,6 @@ title('Transit Lightcurve for QATAR-1b')
 legend(loc='best')
 savefig('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/Qatar1b/Photometry/Graphs/curve5.png')
 
-det_Rplanet_5 = np.sqrt(Rstar**2)*(1 - min(curve5))
+#det_Rplanet_5 = np.sqrt(Rstar**2)*(1 - min(curve5))
 
 close('all')
