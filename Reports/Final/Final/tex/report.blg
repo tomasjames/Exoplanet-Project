@@ -1,23 +1,24 @@
 [0] Config.pm:318> INFO - This is Biber 1.8
-[1] Config.pm:321> INFO - Logfile is 'report.blg'
-[79] biber-darwin:275> INFO - === Fri Apr 24, 2015, 21:18:06
-[79] Biber.pm:333> INFO - Reading 'report.bcf'
-[156] Biber.pm:607> INFO - Using all citekeys in bib section 0
-[179] Biber.pm:3053> INFO - Processing section 0
-[199] Biber.pm:3190> INFO - Looking for bibtex format file '/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib' for section 0
-[207] bibtex.pm:812> INFO - Found BibTeX data source '/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib'
-[225] Utils.pm:169> WARN - Datamodel: Entry 'staralt' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format '10 September 2013' of date field 'urldate' - ignoring
-[225] Utils.pm:169> WARN - Datamodel: Entry '1m' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
-[229] Utils.pm:169> WARN - Name "Richard Ellis, John Huchra, Steve Kahn, George Rieke, Peter B. Stetson" has too many commas: skipping name
-[230] Utils.pm:169> WARN - Datamodel: Entry 'pipeline' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
-[232] Utils.pm:169> WARN - Datamodel: Entry 'sites' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
-[236] Utils.pm:169> WARN - Datamodel: Entry 'exo' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
-[238] Utils.pm:169> WARN - Datamodel: Entry 'orac-dr' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format '07/12/2014' of date field 'urldate' - ignoring
-[242] Utils.pm:169> WARN - Datamodel: Entry 'etd' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
-[252] Utils.pm:169> WARN - The field 'editor' in entry 'howell' cannot be null, deleting it
-[361] Biber.pm:2939> INFO - Overriding locale 'en_GB.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[362] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
-[362] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_GB.UTF-8'
-[427] bbl.pm:482> INFO - Writing 'report.bbl' with encoding 'ascii'
-[430] bbl.pm:555> INFO - Output to report.bbl
-[430] Biber.pm:105> INFO - WARNINGS: 9
+[0] Config.pm:321> INFO - Logfile is 'report.blg'
+[78] biber-darwin:275> INFO - === Sun Apr 26, 2015, 21:06:22
+[78] Biber.pm:333> INFO - Reading 'report.bcf'
+[152] Biber.pm:607> INFO - Using all citekeys in bib section 0
+[193] Biber.pm:3053> INFO - Processing section 0
+[231] Biber.pm:3190> INFO - Looking for bibtex format file '/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib' for section 0
+[237] bibtex.pm:812> INFO - Found BibTeX data source '/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib'
+[284] Utils.pm:169> WARN - Datamodel: Entry 'staralt' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format '10 September 2013' of date field 'urldate' - ignoring
+[285] Utils.pm:169> WARN - Datamodel: Entry 'lemon' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'https://github.com/vterron/lemon' of date field 'urldate' - ignoring
+[296] Utils.pm:169> WARN - Datamodel: Entry '1m' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
+[299] Utils.pm:169> WARN - Datamodel: Entry 'pipeline' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
+[299] Utils.pm:169> WARN - Name "Richard Ellis, John Huchra, Steve Kahn, George Rieke, Peter B. Stetson" has too many commas: skipping name
+[303] Utils.pm:169> WARN - Datamodel: Entry 'sites' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
+[306] Utils.pm:169> WARN - Datamodel: Entry 'exo' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
+[310] Utils.pm:169> WARN - Datamodel: Entry 'orac-dr' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format '07/12/2014' of date field 'urldate' - ignoring
+[312] Utils.pm:169> WARN - Datamodel: Entry 'etd' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring
+[322] Utils.pm:169> WARN - The field 'editor' in entry 'howell' cannot be null, deleting it
+[470] Biber.pm:2939> INFO - Overriding locale 'en_GB.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[470] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
+[470] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_GB.UTF-8'
+[553] bbl.pm:482> INFO - Writing 'report.bbl' with encoding 'ascii'
+[557] bbl.pm:555> INFO - Output to report.bbl
+[558] Biber.pm:105> INFO - WARNINGS: 10

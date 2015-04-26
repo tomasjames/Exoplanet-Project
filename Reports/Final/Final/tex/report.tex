@@ -180,13 +180,13 @@ To better understand the orbital behaviour of exoplanets, along with their calcu
 \caption{A loglog plot showing the relationship between an exoplanet's period and its semi-major axis.}\label{log_period_major}
 \end{figure}
 
-As can be seen in Figure~\ref{log_period_major} the loglog plot of orbital period vs semi-major axis produces a very well defined and characteristic straight line. Kepler's 3rd Law relates period and semi-major axis as defined in equation \ref{Kepler}.
+As can be seen in Figure~\ref{log_period_major} the loglog plot of orbital period vs semi-major axis produces a very well defined and characteristic straight line. Kepler's 3rd Law relates period and semi-major axis as defined in \textcite{haswell} by equation \ref{Kepler}.
 
 \begin{equation} \label{Kepler}
-    T^{2} = \frac{4\pi^2}{GM} a^{3} 
+    T^{2} = \frac{4\pi^2}{G(M_{star}+M_{exo}} a^{3} 
 \end{equation}
 
-In this instance T is the orbital period, a is the semi-major axis, G is the universal gravitational constant and M is the mass of the host star. Given that orbital systems are bound by Kepler's Laws (the Jupiter and Earth points confirm that this is the case for those 2 Solar System planets) the shape of the graph is to be expected, however Kepler's 3rd law uses the mass of the body being orbited as a proportionality constant as illustrated. In this case, this constant is the mass of the host star. This means that whilst the shape of the graph is correct, a number of distinct lines is to be expected due to the varying masses of host stars. The existence of one primary line points to there being limitations on the mass of the host star, however a more likely explanation is that Kepler, having detecting the majority of known exoplanets, has introduced bias into the dataset owing to it primarily looking for Solar System analogues. The erroneous Kepler data points that do not appear to fit this trend could be detections during the adapted K2 mission. Interestingly a number of points lie off this main line in Figure ~\ref{log_period_major}, even factoring for the potential biases. Regrettably the \textcite{exo} does not include error estimations for all exoplanet entries, meaning firm conclusions about why these points lie off of the main sequence cannot be drawn without speculation.
+In this instance T is the orbital period, $a$ is the semi-major axis, $G$ is the universal gravitational constant, $M_{star}$ is the mass of the host star and $M_{exo}$ is the mass of the exoplanet. Given that orbital systems are bound by Kepler's Laws (the Jupiter and Earth points confirm that this is the case for those 2 Solar System planets) the shape of the graph is to be expected, however Kepler's 3rd law uses the mass of the body being orbited as a proportionality constant as illustrated. In this case, this constant is the mass of the host star. This means that whilst the shape of the graph is correct, a number of distinct lines is to be expected due to the varying masses of host stars. The existence of one primary line points to there being limitations on the mass of the host star, however a more likely explanation is that Kepler, having detecting the majority of known exoplanets, has introduced bias into the dataset owing to it primarily looking for Solar System analogues. The erroneous Kepler data points that do not appear to fit this trend could be detections during the adapted K2 mission. Interestingly a number of points lie off this main line in Figure ~\ref{log_period_major}, even factoring for the potential biases. Regrettably the \textcite{exo} does not include error estimations for all exoplanet entries, meaning firm conclusions about why these points lie off of the main sequence cannot be drawn without speculation.
 
 Figure~\ref{log_period_major} also allows analysis of the sensitivity of each detection method. For example the exoplanet with the fastest orbital period and smallest semi-major axis was detected using the pulsar timing method, whilst the exoplanet with the slowest period and largest semi-major axis was detected using the direct imaging method. Direct imaging does however detect exoplanets across the most diverse range of periods and semi-major axes of those detection methods considered, ranging from the second-smallest semi-major axis to the largest.
 
@@ -379,7 +379,7 @@ To determine the error for the calculated radius, equation \ref{dip} was treated
 
 The error estimate on the fractional flux blocked, $\Delta(\Delta F)$, was estimated by performing a root mean square analysis on the observed data with respect to the model EPTM curve. 
 
-The error on the radius as determined by the EPTM model, $\Delta R_{exo-EPTM}$ was taken to be the difference between the curve fit intersecting both the highest and lowest error bar points in the dip. A more rigorous statistical analysis would be performed given more time. 
+The error on the radius as determined by the EPTM model, $\Delta R_{exo-EPTM}$ was taken to be the difference between lines of best and worst fit that could still fit the data comfortably within the error ranges. These lines were adjusted by eye rather than using an automated scheme. A more rigorous statistical analysis that would use an automated scheme, and therefore be more accurate, would be performed given more time. 
 
 %-----------------------------------------------------------------
 % Results
@@ -388,7 +388,7 @@ The error on the radius as determined by the EPTM model, $\Delta R_{exo-EPTM}$ w
 \section{Results}
 
 \subsection{Practice Data Set: QATAR-1b}
-After analysing the QATAR-1b dataset using the photometry process defined earlier, figure \ref{qatar} is the resulting lightcurve. The EPTM model transit is also overlying the observed data. 
+After analysing the QATAR-1b dataset using the photometry process defined earlier, figure \ref{qatar} is the resulting lightcurve. The EPTM model transit is also overlying the observed data. The radii and densitiies determined from the curve can be found in table \ref{qatar1bresults}.
 
 \begin{figure}[H]
 \centering
@@ -397,8 +397,77 @@ After analysing the QATAR-1b dataset using the photometry process defined earlie
 \end{figure}
 
 
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|}
+\hline \hline
+Calculated Radius ($m$) & EPTM Radius ($m$)    & Known Radius ($m$) & Calculated Density ($kg m^{-3}$) & Known Density ($kg m^{-3}$) \\ \hline \hline
+(8.41 $\pm$ 0.97)$x10^7$    & (9.03 $\pm$ 0.79)$x10^7$ & (8.14 $\pm$ 0.3)$x10^7$      & (832 $\pm$ 296)                  & ${{690}_{-84}^{+98}}$     \\ \hline
+\end{tabular}
+\caption{A table showing numerical values calculated in this project. Both the radius calculated using the dip in the observed lightcurve and the radius calculated using the dip in the EPTM lightcurve are shown, along with the published values for comparison. The same is true of the calculated and published densities.}
+\label{qatar1bresults}
+\end{table}
 
-\subsection{}
+The plot shows the characteristic trough as is to be expected from a transit lightcurve. However, there is still some scatter between data points. This is to be expected, as photon arrival at the detector is a random event as described by Poisson statistics. 
+
+The EPTM curve fit was performed by eye, and this is reflected in the error values in the radius determined from it in table \ref{qatar1bresults}. The scatter, particularly in the trough, made it difficult to estimate the true depth of the transit. A root mean square test could help eliminate this uncertainty and improve the accuracy of the fit, and this is something that could be explored in more detail in future work. 
+
+Comparing the values, it can be seen that the calculated radius and EPTM radius are within agreement within their error ranges. The known radius is also within both the calculated radius and EPTM radius error ranges, althrough both the calculated radius and EPTM radius are overstimated. This is attributable to both the difficulty of fitting the curve accurately but also that the transit method gives an upper limit of the mass of the exoplanet. The errors in these instances are both reasonable, though higher than the error on the published value. 
+
+The density is is once again overestimated, and the errors here are much larger especially when compared to those of the published values. 
+
+\subsection{Observed Data}
+Regrettably the scheduled data, after anaylsis, didn't show any visible transits. The lightcurves plotted using this method can be seen in figures \ref{wasp22b}, \ref{wasp78b}and \ref{hats5b}.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/wasp22b.png}
+\caption{The lightcurve plotted after analysing the data from the observations of WASP-22b. As can be seen, no transit is observed in the lightcurve.} \label{wasp22b}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/wasp78b.png}
+\caption{The lightcurve plotted after analysing the data from the observatiosn of WASP-78b. This lightcurve shows evidence of a transit, but it was suspected that bad weather obscured the dip.} \label{wasp78b}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/hats5b.png}
+\caption{The lightcurve plotted after analysing the data from the observations of WASP-78b. As can be seen, no transit is observed in the lightcurve.} \label{hats5b}
+\end{figure}
+
+Figure \ref{wasp78b} showed some evidence of a transit at the point it would be expected (the middle of the observation windoww). This dataset was analysed using the the LEMON differential photometry script \parencite{lemon}, an automatic script to perform differential photometry and plot lightcurves for a user input folder containing the .FITS files to be anaylsed. Unfortunately the software could not be installed on a Linux machine in time to be analysed, so the data was sent to the software author and the LEMON reduced graphs sent back. They showed the same behaviour and as such it was concluded that bad weather, localised to the portion of sky in which the target system was found, obscurved the transit. 
+
+The lightcurves in figures \ref{wasp22b} and \ref{hats5b} show no evidence of transits. Their .FITS files showed artefacts such as brightening out on the limbs of the images, as well as some flat fielding correction problems. The observing conditions as written to the .FITS headers showed that they were not sufficient to cause these issues. 
+
+\subsection{Known Transiting Datasets}
+Replacement data sets that contained known transits were provided by Dr. E. L. Gomez. These were analysed using the routines descibed and the lightcurves produced can be seen in figures \ref{wasp12b} and \ref{hatp25}. The determined quantities can be seen in table \ref{goodresults}.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/wasp12b.png}
+\caption{The lightcurve plotted after analysing the data from the WASP-12b dataset provided by Dr. E. L. Gomez. As can be seen, no transit is clearly visible within the lightcurve. The green datapoints are the photometry reduced data (with errorbars) and the blue line is the EPTM modelled transit.} \label{wasp12b}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.5]{/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/img/hatp25.png}
+\caption{The lightcurve plotted after analysing the data from the WASP-12b dataset provided by Dr. E. L. Gomez. As can be seen, no transit is clearly visible within the lightcurve. The green datapoints are the photometry reduced data (with errorbars) and the blue line is the EPTM modelled transit.} \label{hatp25}
+\end{figure}
+
+\begin{table}
+\small
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline \hline
+Exoplanet & Calculated Radius ($m$) & EPTM Radius ($m$)    & Known Radius ($m$) & Calculated Density ($kg m^{-3}$) & Known Density ($kg m^{-3}$) \\ \hline \hline
+WASP-12b & (13.5 $\pm$ 2.2)$x10^7$    & (14.3 $\pm$ 1.78)$x10^7$ & (12.1 $\pm$ 0.6)$x10^7$      & (258 $\pm$ 132)                  & ${{240}_{-20}^{+30}}$     \\ \hline
+HAT-P-25b & (9.4 $\pm$ 1.2)$x10^7$    & (9.42 $\pm$ 1.03)$x10^7$ & 8.31$x10^7$*      & (308 $\pm$ 110)                  & {420 $\pm$ 70}  \\ \hline
+\end{tabular}
+\caption{A table showing numerical values calculated in this project for WASP-12b and HAT-P-25b. Both the radius calculated using the dip in the observed lightcurve and the radius calculated using the dip in the EPTM lightcurve are shown, along with the published values for comparison. The same is true of the calculated and published densities. *: no error was quoted in the published result.}
+\label{goodresults}
+\end{table}
+
 
 
 %-----------------------------------------------------------------

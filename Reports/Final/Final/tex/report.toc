@@ -42,10 +42,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {I}Practice Data Set: QATAR-1b}{12}{subsection.0.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II}}{13}{subsection.0.4.2}
+\contentsline {subsection}{\numberline {II}Observed Data}{13}{subsection.0.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V}Conclusions}{13}{section.0.5}
+\contentsline {subsection}{\numberline {III}Known Transiting Datasets}{15}{subsection.0.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VI}Future Work}{13}{section.0.6}
+\contentsline {section}{\numberline {V}Conclusions}{17}{section.0.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {I}Appendix: EPTM Code}{15}{section.Alph0.1}
+\contentsline {section}{\numberline {VI}Future Work}{17}{section.0.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {I}Appendix: EPTM Code}{19}{section.Alph0.1}

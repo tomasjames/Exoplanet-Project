@@ -217,6 +217,14 @@ det_Rplanet_3 = np.sqrt((Rstar**2)*(delta_F_3))
 det_Rplanet_4 = np.sqrt((Rstar**2)*(delta_F_4))
 det_Rplanet_5 = np.sqrt((Rstar**2)*(delta_F_5))
 
+####################### Determine density of exoplanet ########################
+
+rho_1 = (Mplanet/((4./3.)*np.pi*(det_Rplanet_1)**3))*(1000./(100)**3)
+rho_2 = (Mplanet/((4./3.)*np.pi*(det_Rplanet_2)**3))*(1000./(100)**3)
+rho_3 = (Mplanet/((4./3.)*np.pi*(det_Rplanet_3)**3))*(1000./(100)**3)
+rho_4 = (Mplanet/((4./3.)*np.pi*(det_Rplanet_4)**3))*(1000./(100)**3)
+rho_5 = (Mplanet/((4./3.)*np.pi*(det_Rplanet_5)**3))*(1000./(100)**3)
+
 ##################### Compute error in model to data fit #####################
 
 error_fit_1 = np.sqrt(mean_squared_error(curve1, F))
@@ -233,6 +241,14 @@ Rplanet_3_error = np.sqrt((delta_F_3/curve3[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(
 Rplanet_4_error = np.sqrt((delta_F_4/curve4[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_4/curve4[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_4/curve4[0]**3)*(error4[0])**2)
 Rplanet_5_error = np.sqrt((delta_F_5/curve5[0])*(0.071)**2 + ((Rstar**2)/4)*(1/(delta_F_5/curve5[0]))*(0.005)**2 + ((Rstar**2)/4)*(delta_F_5/curve5[0]**3)*(error5[0])**2)
 
+################ Determine error in density of exoplanet #####################
+
+delta_rho_1 = np.sqrt((((3./(4*np.pi*(det_Rplanet_1)**3))**2)*((1.879e26)**2)) + (((-9*Mplanet)/(4*np.pi*(det_Rplanet_1)**4))**2)*((Rplanet_1_error)**2))*(1000./(100)**3)
+delta_rho_2 = np.sqrt((((3./(4*np.pi*(det_Rplanet_2)**3))**2)*((1.879e26)**2)) + (((-9*Mplanet)/(4*np.pi*(det_Rplanet_2)**4))**2)*((Rplanet_2_error)**2))*(1000./(100)**3)
+delta_rho_3 = np.sqrt((((3./(4*np.pi*(det_Rplanet_3)**3))**2)*((1.879e26)**2)) + (((-9*Mplanet)/(4*np.pi*(det_Rplanet_3)**4))**2)*((Rplanet_3_error)**2))*(1000./(100)**3)
+delta_rho_4 = np.sqrt((((3./(4*np.pi*(det_Rplanet_4)**3))**2)*((1.879e26)**2)) + (((-9*Mplanet)/(4*np.pi*(det_Rplanet_4)**4))**2)*((Rplanet_4_error)**2))*(1000./(100)**3)
+delta_rho_5 = np.sqrt((((3./(4*np.pi*(det_Rplanet_5)**3))**2)*((1.879e26)**2)) + (((-9*Mplanet)/(4*np.pi*(det_Rplanet_5)**4))**2)*((Rplanet_5_error)**2))*(1000./(100)**3)
+
 ################################## Plot data ##################################
 
 # Define array of frames to plot over
@@ -241,9 +257,9 @@ frames_model = np.linspace(1, 220, nobs)
 
 figure(6)
 #plot(frames, curve1, 'r.', label='Calibrated wrt calib1')
-errorbar(frames, curve1, fmt='', yerr=error1, label='Calibrated wrt calib1')
+errorbar(frames, curve1, fmt='g.', yerr=error1, label='Calibrated wrt calib1')
 #plot(frames, linspace(1,1,len(frames)))
-plot(frames_model, F, label='ETPM')
+plot(frames_model, F, 'b', label='ETPM')
 xlabel('Frame Number')
 ylabel('Calibrated Flux')
 title('Transit Lightcurve for WASP-12b')

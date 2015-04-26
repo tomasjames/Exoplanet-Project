@@ -96,6 +96,26 @@
       \verb http://starlink.jach.hawaii.edu/starlink
       \endverb
     \endentry
+    \entry{einstein}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=3ebf53e52a3ce84f0ffb8553200a6a63}{Einstein}{E\bibinitperiod}{Albert}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3ebf53e52a3ce84f0ffb8553200a6a63}{Einstein}{E\bibinitperiod}{Albert}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \field{sortinit}{E}
+      \field{labelyear}{1936}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Lens-like action of a star by the deviation of light in the gravitational field}
+      \field{journaltitle}{Science}
+      \field{number}{2188}
+      \field{title}{Lens-like action of a star by the deviation of light in the gravitational field}
+      \field{volume}{84}
+      \field{year}{1936}
+      \field{pages}{506\bibrangedash 507}
+    \endentry
     \entry{exo}{webpage}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=21b3a060049157a17c7d7dd6598b0c46}{{Extrasolar\bibnamedelimb Planets\bibnamedelimb Encyclopaedia}}{E\bibinitperiod}{}{}{}{}{}{}}%
@@ -117,6 +137,25 @@
       \verb http://www.exoplanet.eu
       \endverb
       \warn{\item Datamodel: Entry 'exo' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'n.d.' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{haswell}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=65745fc6b745e420ffcb3a08e4e1ffad}{{Haswell}}{H\bibinitperiod}{C.\bibnamedelimi A.}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=65745fc6b745e420ffcb3a08e4e1ffad}{{Haswell}}{H\bibinitperiod}{C.\bibnamedelimi A.}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{65745fc6b745e420ffcb3a08e4e1ffad}
+      \strng{fullhash}{65745fc6b745e420ffcb3a08e4e1ffad}
+      \field{sortinit}{H}
+      \field{labelyear}{2010}
+      \field{labelmonth}{07}
+      \field{datelabelsource}{}
+      \field{labeltitle}{{Transiting Exoplanets}}
+      \field{booktitle}{Transiting Exoplanets by Carole A.~Haswell.~Cambridge University Press, 2010.~ISBN: 9780521139380}
+      \field{month}{07}
+      \field{title}{{Transiting Exoplanets}}
+      \field{year}{2010}
     \endentry
     \entry{howell}{book}{}
       \name{labelname}{1}{}{%
@@ -415,6 +454,128 @@
       \verb http://catserver.ing.iac.es/staralt/
       \endverb
       \warn{\item Datamodel: Entry 'staralt' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format '10 September 2013' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{micro}{article}{}
+      \name{labelname}{39}{}{%
+        {{uniquename=0,hash=aca9a265d60f911613bd350abb15bb06}{{Sumi}}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9590c3679c1d8c26e9b03ff721fee057}{{Kamiya}}{K\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=927c065c98bbac5615458a1a24bb3f31}{{Bennett}}{B\bibinitperiod}{D.\bibnamedelimi P.}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d0ee5b41f7ffbff5c3c14bdab6d84a1b}{{Bond}}{B\bibinitperiod}{I.\bibnamedelimi A.}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6a3fe9a218f09ea737867c92ea601259}{{Abe}}{A\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2902ba861ee95a4019a866e722f9d74e}{{Botzler}}{B\bibinitperiod}{C.\bibnamedelimi S.}{C\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1530457a09180e05f51e67bebf935425}{{Fukui}}{F\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5860a4142a19756fe8b9e0350b9ec38a}{{Furusawa}}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=056d7319ada26a3ba53c0f0cf1b03eff}{{Hearnshaw}}{H\bibinitperiod}{J.\bibnamedelimi B.}{J\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=664d6cdf3b59328c6d07cfa09863c3c7}{{Itow}}{I\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3ca50b6e17a350fa545cf278795d9003}{{Kilmartin}}{K\bibinitperiod}{P.\bibnamedelimi M.}{P\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a0b42169a2e0f8d03d3f9f4a6488633a}{{Korpela}}{K\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cb04db67d6b1a8efd95c20b4fdcdda3c}{{Lin}}{L\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1ac89cec9f98b8a218f7b17c859c7478}{{Ling}}{L\bibinitperiod}{C.\bibnamedelimi H.}{C\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=03c2c42a2d0d0e9d3969266fcab8e9dc}{{Masuda}}{M\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=983b5197bfebfdc213bfe73d779c7c2e}{{Matsubara}}{M\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=59eb9822ef6eaf1e36a98806a701b6b3}{{Miyake}}{M\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bf000888e3dc92a3153a76d40dc90f4f}{{Motomura}}{M\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b466764b4fe553cb329bf279b6819efe}{{Muraki}}{M\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4412fa3282584c4721b89b26950a1515}{{Nagaya}}{N\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=43cf4e06b4a5bb135dfe5a723061c09b}{{Nakamura}}{N\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7c48a1a65423e97f9384f1f7dacee659}{{Ohnishi}}{O\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2eedd4969e150211c3f76661e362b50b}{{Okumura}}{O\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=54cfbc29b893b5afe8f100558bf60620}{{Perrott}}{P\bibinitperiod}{Y.\bibnamedelimi C.}{Y\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e7dbfd8cb23ed873abbda0b1b4ba7772}{{Rattenbury}}{R\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8f0d3056c5d6797e25fa363bf5d5d721}{{Saito}}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=361981abdd6461b523cc4148ab0aff5d}{{Sako}}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5cedd88112761670db58e6588136c83b}{{Sullivan}}{S\bibinitperiod}{D.\bibnamedelimi J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=01d54ab7617486abcd366fb35c53a78e}{{Sweatman}}{S\bibinitperiod}{W.\bibnamedelimi L.}{W\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ff8217bca25cdc0296a97b10cc0d5857}{{Tristram}}{T\bibinitperiod}{P.\bibnamedelimi J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=04e2d9d467fa54fd022fbe1c5af3f55c}{{Udalski}}{U\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10caa84dd54d4a6c5ef1e6e354fae57b}{{Szyma{\'n}ski}}{S\bibinitperiod}{M.\bibnamedelimi K.}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3f12c355f90e0c20ba0b84491024e45f}{{Kubiak}}{K\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=30977197c3afea2541ffd48de88eec0f}{{Pietrzy{\'n}ski}}{P\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6216c35d6029a83b13c6c3e609078dc2}{{Poleski}}{P\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5ae8d011e9d388cc1d2fa212d6ec8e27}{{Soszy{\'n}ski}}{S\bibinitperiod}{I.}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2ef9175fb1dc63bf799423441dab4688}{{Wyrzykowski}}{W\bibinitperiod}{{\L}.}{{\L}\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4d0fb20feefea57558dbdbda93bba3d9}{{Ulaczyk}}{U\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ce23e8d64314aa21c5ded9b0f6869aa4}{{Microlensing\bibnamedelimb Observations\bibnamedelimb in\bibnamedelimb Astrophysics\bibnamedelimb (MOA)\bibnamedelimb Collaboration}}{M\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{39}{}{%
+        {{uniquename=0,hash=aca9a265d60f911613bd350abb15bb06}{{Sumi}}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9590c3679c1d8c26e9b03ff721fee057}{{Kamiya}}{K\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=927c065c98bbac5615458a1a24bb3f31}{{Bennett}}{B\bibinitperiod}{D.\bibnamedelimi P.}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d0ee5b41f7ffbff5c3c14bdab6d84a1b}{{Bond}}{B\bibinitperiod}{I.\bibnamedelimi A.}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6a3fe9a218f09ea737867c92ea601259}{{Abe}}{A\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2902ba861ee95a4019a866e722f9d74e}{{Botzler}}{B\bibinitperiod}{C.\bibnamedelimi S.}{C\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1530457a09180e05f51e67bebf935425}{{Fukui}}{F\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5860a4142a19756fe8b9e0350b9ec38a}{{Furusawa}}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=056d7319ada26a3ba53c0f0cf1b03eff}{{Hearnshaw}}{H\bibinitperiod}{J.\bibnamedelimi B.}{J\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=664d6cdf3b59328c6d07cfa09863c3c7}{{Itow}}{I\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3ca50b6e17a350fa545cf278795d9003}{{Kilmartin}}{K\bibinitperiod}{P.\bibnamedelimi M.}{P\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a0b42169a2e0f8d03d3f9f4a6488633a}{{Korpela}}{K\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cb04db67d6b1a8efd95c20b4fdcdda3c}{{Lin}}{L\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1ac89cec9f98b8a218f7b17c859c7478}{{Ling}}{L\bibinitperiod}{C.\bibnamedelimi H.}{C\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=03c2c42a2d0d0e9d3969266fcab8e9dc}{{Masuda}}{M\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=983b5197bfebfdc213bfe73d779c7c2e}{{Matsubara}}{M\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=59eb9822ef6eaf1e36a98806a701b6b3}{{Miyake}}{M\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bf000888e3dc92a3153a76d40dc90f4f}{{Motomura}}{M\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b466764b4fe553cb329bf279b6819efe}{{Muraki}}{M\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4412fa3282584c4721b89b26950a1515}{{Nagaya}}{N\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=43cf4e06b4a5bb135dfe5a723061c09b}{{Nakamura}}{N\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7c48a1a65423e97f9384f1f7dacee659}{{Ohnishi}}{O\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2eedd4969e150211c3f76661e362b50b}{{Okumura}}{O\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=54cfbc29b893b5afe8f100558bf60620}{{Perrott}}{P\bibinitperiod}{Y.\bibnamedelimi C.}{Y\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e7dbfd8cb23ed873abbda0b1b4ba7772}{{Rattenbury}}{R\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8f0d3056c5d6797e25fa363bf5d5d721}{{Saito}}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=361981abdd6461b523cc4148ab0aff5d}{{Sako}}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5cedd88112761670db58e6588136c83b}{{Sullivan}}{S\bibinitperiod}{D.\bibnamedelimi J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=01d54ab7617486abcd366fb35c53a78e}{{Sweatman}}{S\bibinitperiod}{W.\bibnamedelimi L.}{W\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ff8217bca25cdc0296a97b10cc0d5857}{{Tristram}}{T\bibinitperiod}{P.\bibnamedelimi J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=04e2d9d467fa54fd022fbe1c5af3f55c}{{Udalski}}{U\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10caa84dd54d4a6c5ef1e6e354fae57b}{{Szyma{\'n}ski}}{S\bibinitperiod}{M.\bibnamedelimi K.}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3f12c355f90e0c20ba0b84491024e45f}{{Kubiak}}{K\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=30977197c3afea2541ffd48de88eec0f}{{Pietrzy{\'n}ski}}{P\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6216c35d6029a83b13c6c3e609078dc2}{{Poleski}}{P\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5ae8d011e9d388cc1d2fa212d6ec8e27}{{Soszy{\'n}ski}}{S\bibinitperiod}{I.}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2ef9175fb1dc63bf799423441dab4688}{{Wyrzykowski}}{W\bibinitperiod}{{\L}.}{{\L}\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4d0fb20feefea57558dbdbda93bba3d9}{{Ulaczyk}}{U\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ce23e8d64314aa21c5ded9b0f6869aa4}{{Microlensing\bibnamedelimb Observations\bibnamedelimb in\bibnamedelimb Astrophysics\bibnamedelimb (MOA)\bibnamedelimb Collaboration}}{M\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{41bcf2cc4f364942b59e6efb2578b8a1}
+      \strng{fullhash}{42112c08b4ec74f75f41e38aa1d23b63}
+      \field{sortinit}{S}
+      \field{labelyear}{2011}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labeltitle}{{Unbound or distant planetary mass population detected by gravitational microlensing}}
+      \field{eprintclass}{astro-ph.EP}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\nat}
+      \field{month}{05}
+      \field{title}{{Unbound or distant planetary mass population detected by gravitational microlensing}}
+      \field{volume}{473}
+      \field{year}{2011}
+      \field{pages}{349\bibrangedash 352}
+      \verb{doi}
+      \verb 10.1038/nature10092
+      \endverb
+      \verb{eprint}
+      \verb 1105.3544
+      \endverb
+    \endentry
+    \entry{lemon}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=3484c01822a4ac7075fd44790dcc8cef}{Terron}{T\bibinitperiod}{Victor}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3484c01822a4ac7075fd44790dcc8cef}{Terron}{T\bibinitperiod}{Victor}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3484c01822a4ac7075fd44790dcc8cef}
+      \strng{fullhash}{3484c01822a4ac7075fd44790dcc8cef}
+      \field{sortinit}{T}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labeltitle}{LEMON: differential photometry}
+      \field{title}{LEMON: differential photometry}
+      \field{year}{2015}
+      \warn{\item Datamodel: Entry 'lemon' (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invalid format 'https://github.com/vterron/lemon' of date field 'urldate' - ignoring}
     \endentry
     \entry{rvdetect}{image}{}
       \name{labelname}{1}{}{%
