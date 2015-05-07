@@ -17,7 +17,7 @@ from numpy import *
 ############################### Read data #####################################
 
 #Import data
-data = Table.read('Catalogs/complete.xml',format='votable')
+data = Table.read('/Users/tomasjames/Documents/University/Cardiff/Project/Project/Introductory Plots/Catalogs/complete.xml',format='votable')
 
 ###################### Extract variables from data ############################
 
@@ -163,10 +163,10 @@ transit_mass_max = max(transit_mass_arr)
 ######################## Define Solar System data #############################
 
 jupiter_radius = 1
-earth_radius = 6371/69911
+earth_radius = 6371./69911
 
 jupiter_mass = 1
-earth_mass = 6e24/1.9e27
+earth_mass = 6.e24/1.9e27
 sun_mass = 1
 
 earth_major = 1.00000011
@@ -176,6 +176,9 @@ earth_period = 365
 jupiter_period = 4332
     
 ############################### Plot data #####################################
+
+earthline = ones(len(radial_mass))*earth_radius
+line1 = linspace(1, 30, len(radial_mass))
 
 #Open figure
 figure(1)
@@ -190,6 +193,7 @@ plot(pulsar_radius, pulsar_mass, 'c.', label = 'Pulsar: ' +str(len(pulsar_radius
 plot(ttv_radius, ttv_mass, 'k.', label = 'TTV: ' +str(len(ttv_radius)))
 plot(earth_radius, earth_mass, 'g<', markersize = 10, label = 'Earth')
 plot(jupiter_radius, jupiter_mass, 'r>', markersize = 10, label = 'Jupiter')
+plot(earthline, line1, 'g--')
 
 xlabel('$Exoplanet Radius /R_{Jup}$')
 ylabel('$Exoplanetary Mass /M_{Jup}$')
@@ -198,6 +202,8 @@ legend(loc='best', prop={'size':10})
 
 savefig('radius_mass')
 
+
+line2 = linspace(10**(-3), 10**(2), len(radial_mass))
 
 figure(2)
 loglog(radial_radius, radial_mass, 'm.', label = 'Radial Velocity: ' +str(len(radial_radius)))
@@ -209,6 +215,7 @@ loglog(pulsar_radius, pulsar_mass, 'c.', label = 'Pulsar: ' +str(len(pulsar_radi
 loglog(ttv_radius, ttv_mass, 'k.', label = 'TTV: ' +str(len(ttv_radius)))
 loglog(earth_radius, earth_mass, 'g<', markersize = 10, label = 'Earth')
 loglog(jupiter_radius, jupiter_mass, 'r>', markersize = 10, label = 'Jupiter')
+plot(log(earthline), line2, 'g--')
 
 xlabel('$Log(Exoplanet Radius) /R_{Jup}$')
 ylabel('$Log(Exoplanetary Mass) /M_{Jup}$')

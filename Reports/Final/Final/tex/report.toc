@@ -10,44 +10,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Transiting}{2}{subsection.0.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Radial Velocity }{3}{equation.0.1.1}
+\contentsline {subsubsection}{Radial Velocity }{3}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Direct Imaging }{4}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Microlensing }{5}{figure.caption.3}
+\contentsline {subsubsection}{Microlensing }{4}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pulsar Timing}{5}{figure.caption.3}
+\contentsline {subsubsection}{Pulsar Timing}{4}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {III}Statistical Properties of Known Exoplanets}{5}{subsection.0.1.3}
+\contentsline {subsection}{\numberline {III}Statistical Properties of Known Exoplanets}{4}{subsection.0.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV}LCOGT Observatories}{7}{subsection.0.1.4}
+\contentsline {subsection}{\numberline {IV}LCOGT Observatories}{6}{subsection.0.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {II}Observed Exoplanets}{8}{section.0.2}
+\contentsline {section}{\numberline {II}Observed Exoplanets}{7}{section.0.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I}Selection Criteria}{8}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {I}Selection Criteria}{7}{subsection.0.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {III}Methodology}{9}{section.0.3}
+\contentsline {section}{\numberline {III}Methodology}{8}{section.0.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I}Data Collection}{9}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {I}Data Collection}{8}{subsection.0.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II}Data Analysis}{9}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {II}Data Analysis}{8}{subsection.0.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {III}Aperture Photometry}{9}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {III}Modelling the Transit with the Exoplanet Pixelisation Transit Model}{9}{subsection.0.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV}Modelling the Transit with the Exoplanet Pixelisation Transit Model}{11}{subsection.0.3.4}
+\contentsline {subsection}{\numberline {IV}Error Analysis}{10}{subsection.0.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {V}Error Analysis}{11}{subsection.0.3.5}
+\contentsline {section}{\numberline {IV}Results}{11}{section.0.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {IV}Results}{12}{section.0.4}
+\contentsline {subsection}{\numberline {I}Practice Data Set: QATAR-1b}{11}{subsection.0.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I}Practice Data Set: QATAR-1b}{12}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {II}Observed Data}{12}{subsection.0.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II}Observed Data}{13}{subsection.0.4.2}
+\contentsline {subsection}{\numberline {III}Known Transiting Datasets}{13}{subsection.0.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {III}Known Transiting Datasets}{15}{subsection.0.4.3}
+\contentsline {section}{\numberline {V}Conclusions}{14}{section.0.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V}Conclusions}{17}{section.0.5}
+\contentsline {section}{\numberline {VI}Future Work}{14}{section.0.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VI}Future Work}{17}{section.0.6}
+\contentsline {section}{\numberline {VII}Acknowledgements}{14}{section.0.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {I}Appendix: EPTM Code}{19}{section.Alph0.1}
+\contentsline {section}{\numberline {I}Appendix: EPTM Code}{17}{section.Alph0.1}

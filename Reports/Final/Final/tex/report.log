@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.22)  26 APR 2015 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.22)  6 MAY 2015 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,6 +553,19 @@ Package: listings 2014/03/04 1.5c (Carsten Heinz)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen159
+\WF@size=\dimen160
+\c@WF@wrappedlines=\count287
+\WF@box=\box33
+\WF@everypar=\toks22
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count288
+\c@subtable=\count289
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip64
 \f@ncyO@elh=\skip65
@@ -566,7 +579,7 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 )
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 57.
+less on input line 61.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -580,31 +593,36 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'firstinits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 75.
+(biblatex)                Setting 'uniquename=init' on input line 82.
 
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label `log_radius_mass' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 82.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-\big@size=\dimen159
+\big@size=\dimen161
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -644,20 +662,21 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 75.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 82.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count287
+\c@section@level=\count290
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (./report.out) (./report.out)
 \@outlinefile=\write4
@@ -666,17 +685,17 @@ LaTeX Info: Redefining \nameref on input line 75.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen160
-\scratchbox=\box34
-\nofMPsegments=\count289
-\nofMParguments=\count290
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen161
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count291
+\scratchdimen=\dimen162
+\scratchbox=\box35
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen163
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -714,6 +733,13 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'howell':
 (biblatex)                - Name "Richard Ellis, John Huchra, Steve Kahn, Georg
 e Rieke, Peter B. Stetson" has too many commas: skipping name.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'keplerfailure':
+(biblatex)                - Datamodel: Entry 'keplerfailure' (/Users/tomasjames
+/Documents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib)
+: Invalid format 'May 21st 2013' of date field 'urldate' - ignoring.
 
 
 Package biblatex Warning: Biber reported the following issues
@@ -757,55 +783,71 @@ Package biblatex Warning: Biber reported the following issues
 ents/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Inva
 lid format '10 September 2013' of date field 'urldate' - ignoring.
 
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'lemon':
-(biblatex)                - Datamodel: Entry 'lemon' (/Users/tomasjames/Documen
-ts/University/Cardiff/Project/Project/Reports/Final/Final/refs/ref.bib): Invali
-d format 'https://github.com/vterron/lemon' of date field 'urldate' - ignoring.
-
-
 )
-Package biblatex Info: Reference section=0 on input line 75.
-Package biblatex Info: Reference segment=0 on input line 75.
-\c@lstlisting=\count294
+Package biblatex Info: Reference section=0 on input line 82.
+Package biblatex Info: Reference segment=0 on input line 82.
+\c@lstlisting=\count297
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <24> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 78.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 78.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 85.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 85.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 78.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 85.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 78.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 85.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 78.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 85.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [1
+)
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.85 
+     
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   S
+l.85 
+     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   S
+l.85 
+     
+? 
+
+Overfull \hbox (15.492pt too wide) in paragraph at lines 85--85
+ [][] 
+ []
+
+[1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 92.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 \end{abstract}
+l.94 \end{abstract}
                     [1]
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 93.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 100.
  (./report.toc)
 \tf@toc=\write5
 \openout5 = `report.toc'.
@@ -814,8 +856,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 
-      [1
+l.102 
+       [1
 
 ]
 Missing character: There is no â in font pplr9t!
@@ -824,40 +866,55 @@ Missing character: There is no ¨ in font pplr9t!
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ¨ in font pplr9t!
-
+ [2]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/Saved/transit.png, id=129, 451.6875pt x 307.90031pt>
+inal/img/Saved/transit.png, id=158, 451.6875pt x 307.90031pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/Saved/transit.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/Saved/transit.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/Saved/transit.png used on input line 118.
+/Project/Reports/Final/Final/img/Saved/transit.png used on input line 132.
 (pdftex.def)             Requested size: 225.84319pt x 153.94977pt.
+
+Overfull \hbox (2.8908pt too wide) in paragraph at lines 132--133
+ [][] 
+ []
+
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 119.
- [2]
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 133.
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ™ in font pplr9t!
-Missing character: There is no â in font pplb9t!
-Missing character: There is no € in font pplb9t!
-Missing character: There is no ¨ in font pplb9t!
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+141.
+
 
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/Saved/radialvelocity.jpg, id=147, 928.46875pt x 935.495pt>
+inal/img/Saved/radialvelocity.jpg, id=163, 928.46875pt x 935.495pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/Saved/radialvelocity.jpg Graphic file (type jpg)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/Saved/radialvelocity.jpg>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/Saved/radialvelocity.jpg used on input line 13
-7.
+/Project/Reports/Final/Final/img/Saved/radialvelocity.jpg used on input line 14
+4.
 (pdftex.def)             Requested size: 185.69046pt x 187.09567pt.
- [3 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
-al/Final/img/Saved/transit.png>]
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 14
+9.
+
+Missing character: There is no â in font pplb9t!
+Missing character: There is no € in font pplb9t!
+Missing character: There is no ¨ in font pplb9t!
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 15
+1.
+
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ™ in font pplr9t!
@@ -870,6 +927,9 @@ Missing character: There is no ™ in font pplr9t!
 Missing character: There is no â in font pplb9t!
 Missing character: There is no € in font pplb9t!
 Missing character: There is no ¨ in font pplb9t!
+[3 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fina
+l/Final/img/Saved/transit.png> </Users/tomasjames/Documents/University/Cardiff/
+Project/Project/Reports/Final/Final/img/Saved/radialvelocity.jpg>]
 Missing character: There is no â in font pplr9t!
 Missing character: There is no € in font pplr9t!
 Missing character: There is no ¨ in font pplr9t!
@@ -879,170 +939,207 @@ Missing character: There is no ¨ in font pplr9t!
 Missing character: There is no â in font pplb9t!
 Missing character: There is no € in font pplb9t!
 Missing character: There is no ¨ in font pplb9t!
- [4 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
-al/Final/img/Saved/radialvelocity.jpg>]
+
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/log_period_major.png, id=178, 578.16pt x 433.62pt>
+inal/img/log_period_major.png, id=190, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/log_period_major.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/log_period_major.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/log_period_major.png used on input line 179.
+/Project/Reports/Final/Final/img/log_period_major.png used on input line 191.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [5]
-LaTeX Font Info:    Try loading font information for OML+pplx on input line 193
+ [4]
+LaTeX Font Info:    Try loading font information for OML+pplx on input line 205
 .
-LaTeX Font Info:    No file OMLpplx.fd. on input line 193.
+LaTeX Font Info:    No file OMLpplx.fd. on input line 205.
 
 
 LaTeX Font Warning: Font shape `OML/pplx/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 193.
+(Font)              for symbol `textless' on input line 205.
 
-[6 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fina
+[5 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fina
 l/Final/img/log_period_major.png>]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/log_radius_mass.png, id=204, 578.16pt x 433.62pt>
+inal/img/log_radius_mass.png, id=216, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/log_radius_mass.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/log_radius_mass.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/log_radius_mass.png used on input line 199.
+/Project/Reports/Final/Final/img/log_radius_mass.png used on input line 211.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [7 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+ [6 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/log_radius_mass.png>]
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 242
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 254
 .
-LaTeX Font Info:    No file OMSpplx.fd. on input line 242.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 254.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 242.
+(Font)              for symbol `textbullet' on input line 254.
 
-[8]
+[7]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/aperture_qatar1b.png, id=252, 578.16pt x 433.62pt>
+inal/img/aperture_qatar1b.png, id=264, 505.89pt x 379.4175pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/aperture_qatar1b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/aperture_qatar1b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/aperture_qatar1b.png used on input line 314.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [9] [10 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Report
-s/Final/Final/img/aperture_qatar1b.png>]
-[11]
+/Project/Reports/Final/Final/img/aperture_qatar1b.png used on input line 315.
+(pdftex.def)             Requested size: 252.94437pt x 189.70828pt.
+ [8 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/aperture_qatar1b.png>] [9]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/qatar1b.png, id=297, 578.16pt x 433.62pt>
+inal/img/saved/eptm.png, id=296, 408.52625pt x 275.0275pt>
+File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/saved/eptm.png Graphic file (type png)
+
+<use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/saved/eptm.png>
+Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
+/Project/Reports/Final/Final/img/saved/eptm.png used on input line 373.
+(pdftex.def)             Requested size: 183.83511pt x 123.76123pt.
+ [10 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+nal/Final/img/saved/eptm.png>]
+</Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
+inal/img/qatar1b.png, id=320, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/qatar1b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/qatar1b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/qatar1b.png used on input line 395.
+/Project/Reports/Final/Final/img/qatar1b.png used on input line 420.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [12]
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.422 \end{figure}
+                  
+? 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+al/Final/img/qatar1b.png>]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/wasp22b.png, id=311, 578.16pt x 433.62pt>
+inal/img/wasp22b.png, id=335, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/wasp22b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/wasp22b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/wasp22b.png used on input line 423.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [13 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
-nal/Final/img/qatar1b.png>]
+/Project/Reports/Final/Final/img/wasp22b.png used on input line 449.
+(pdftex.def)             Requested size: 172.78938pt x 129.59076pt.
+
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/wasp78b.png, id=320, 578.16pt x 433.62pt>
+inal/img/wasp78b.png, id=336, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/wasp78b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/wasp78b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/wasp78b.png used on input line 429.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+/Project/Reports/Final/Final/img/wasp78b.png used on input line 455.
+(pdftex.def)             Requested size: 172.78938pt x 129.59076pt.
 
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/hats5b.png, id=321, 578.16pt x 433.62pt>
+inal/img/hats5b.png, id=337, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/hats5b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/hats5b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/hats5b.png used on input line 435.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [14 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
+/Project/Reports/Final/Final/img/hats5b.png used on input line 461.
+(pdftex.def)             Requested size: 172.78938pt x 129.59076pt.
+ [12 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/wasp22b.png> </Users/tomasjames/Documents/University/Cardiff/Proj
-ect/Project/Reports/Final/Final/img/wasp78b.png>]
+ect/Project/Reports/Final/Final/img/wasp78b.png> </Users/tomasjames/Documents/U
+niversity/Cardiff/Project/Project/Reports/Final/Final/img/hats5b.png>]
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/wasp12b.png, id=335, 578.16pt x 433.62pt>
+inal/img/wasp12b.png, id=357, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/wasp12b.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/wasp12b.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/wasp12b.png used on input line 448.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [15 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
-nal/Final/img/hats5b.png>]
+/Project/Reports/Final/Final/img/wasp12b.png used on input line 479.
+(pdftex.def)             Requested size: 250.82358pt x 188.11371pt.
+
 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Final/F
-inal/img/hatp25.png, id=345, 578.16pt x 433.62pt>
+inal/img/hatp25.png, id=358, 578.16pt x 433.62pt>
 File: /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fi
 nal/Final/img/hatp25.png Graphic file (type png)
 
 <use /Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/hatp25.png>
 Package pdftex.def Info: /Users/tomasjames/Documents/University/Cardiff/Project
-/Project/Reports/Final/Final/img/hatp25.png used on input line 454.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+/Project/Reports/Final/Final/img/hatp25.png used on input line 485.
+(pdftex.def)             Requested size: 250.82358pt x 188.11371pt.
 
-Overfull \hbox (3.53265pt too wide) in paragraph at lines 461--467
+Overfull \hbox (3.53265pt too wide) in paragraph at lines 502--508
  [][] 
  []
 
-[16 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
+[13 </Users/tomasjames/Documents/University/Cardiff/Project/Project/Reports/Fin
 al/Final/img/wasp12b.png> </Users/tomasjames/Documents/University/Cardiff/Proje
-ct/Project/Reports/Final/Final/img/hatp25.png>] [17]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 490.
-
+ct/Project/Reports/Final/Final/img/hatp25.png>] [14]
+! Undefined control sequence.
+<argument> \mnras 
+                  
+l.544 
+      
+? 
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 543.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+! Undefined control sequence.
+<argument> \aaps 
+                 
+l.544 
+      
+? 
+! Undefined control sequence.
+<argument> \aj 
+               
+l.544 
+      
+? 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
 
 Package biblatex Warning: No driver for entry type 'image'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
 
-Overfull \hbox (31.7223pt too wide) in paragraph at lines 491--491
+Overfull \hbox (31.7223pt too wide) in paragraph at lines 544--544
 [][]\OT1/pplx/m/n/10 NASA Ex-o-planet Archive (2010). \OT1/pplx/m/it/10 Tran-si
 t Ex-am-ple Im-age\OT1/pplx/m/n/10 . \OT1/pplx/m/sc/10 url\OT1/pplx/m/n/10 : []
 $\OT1/pcr/m/n/10 http : / / exoplanetarchive . ipac . caltech . edu / applicati
@@ -1051,32 +1148,43 @@ ons /
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
+! Undefined control sequence.
+<argument> \apj 
+                
+l.544 
+      
+? 
+[15
+
+]
 ! Undefined control sequence.
 <argument> \nat 
                 
-l.491 
+l.544 
       
 ? 
 
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 543.
+
+
 Package biblatex Warning: No driver for entry type 'image'.
-(biblatex)                Using fallback driver on input line 490.
+(biblatex)                Using fallback driver on input line 543.
 
 
-Overfull \hbox (43.9229pt too wide) in paragraph at lines 491--491
+Overfull \hbox (43.9229pt too wide) in paragraph at lines 544--544
 [][]\OT1/pplx/m/n/10 Wolszszan A. and Frail D. A. (1992). \  A plan-e-tary sys-
 tem around the mil-lisec-ond pul-sar PSR1257 + 12". \OT1/pplx/m/it/10 Na-ture \
 OT1/pplx/m/n/10 355.doi:10.1038/355145a0,
  []
 
-[18
-
-] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+[16] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 501.
+nput line 554.
 
 (/Users/tomasjames/Documents/University/Cardiff/Project/Project/Data/HAT-P-25/P
 hotometry/modelv2.py
@@ -1084,32 +1192,35 @@ LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 25.
- [19] [20] [21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
+ [17] [18] [19])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 557.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 557.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 504.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 504.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 557.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 557.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: AC6CE525708B5A6CD26BFBA5D9677D0F;1360.
+(rerunfilecheck)             Checksum: 17083B77FACB69181FF54EE9BF4BE4B3;1341.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 504.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 557.
  ) 
 Here is how much of TeX's memory you used:
- 15481 strings out of 493117
- 249893 string characters out of 6135432
- 715562 words of memory out of 5000000
- 18398 multiletter control sequences out of 15000+600000
+ 15655 strings out of 493117
+ 253130 string characters out of 6135432
+ 719453 words of memory out of 5000000
+ 18556 multiletter control sequences out of 15000+600000
  48162 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,78p,1503b,1921s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,78p,1518b,1921s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1124,10 +1235,10 @@ ype1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
 no/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr
 8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 >
-Output written on report.pdf (24 pages, 660622 bytes).
+Output written on report.pdf (22 pages, 911072 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 633 compressed objects within 7 object streams
- 292 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 748 PDF objects out of 1000 (max. 8388607)
+ 674 compressed objects within 7 object streams
+ 300 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
